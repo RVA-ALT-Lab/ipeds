@@ -17,6 +17,9 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <ul>
+      <li v-for="record in vcuList" :key="record.ID">{{record['Instiution_Name']}}{{record['Year']}}</li>
+    </ul>
   </div>
 </template>
 
@@ -25,7 +28,30 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      records: []
+    }
+  },
+  computed: {
+    vcuList: function () {
+      return this.records.filter(function (record) {
+        return record['Instiution_Name'] === 'Virginia Commonwealth University'
+      })
+    }
+  },
+  created: function () {
+    this.getData()
+  },
+  update: function () {
+    console.log(this.vcuList)
+  },
+  methods: {
+    getData: function () {
+      fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/combined-results.json')
+      .then(response => response.json())
+      .then(json => {
+        this.records = json
+      })
     }
   }
 }
