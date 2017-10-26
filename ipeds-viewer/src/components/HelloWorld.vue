@@ -1,29 +1,18 @@
 <template>
-  <div class="hello">
+  <div class='hello'>
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <div id="chartdiv" style="height: 500px;"></div>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-    <ul>
-      <li v-for="record in vcuList" :key="record.ID">{{record['Instiution_Name']}}{{record['Year']}}</li>
+      <li v-for='record in vcuList' :key='record.ID'>{{record['Instiution_Name']}}{{record['Year']}}</li>
     </ul>
   </div>
 </template>
 
 <script>
+import 'amcharts3/amcharts/amcharts'
+import 'amcharts3/amcharts/serial'
+import 'amcharts3/amcharts/themes/light'
+
 export default {
   name: 'HelloWorld',
   data () {
@@ -44,6 +33,90 @@ export default {
   },
   update: function () {
     console.log(this.vcuList)
+    var chart = window.AmCharts.makeChart('chartdiv', {
+      'type': 'serial',
+      'theme': 'light',
+      'marginRight': 40,
+      'marginLeft': 40,
+      'autoMarginOffset': 20,
+      'mouseWheelZoomEnabled': true,
+      'dataDateFormat': 'YYYY-MM-DD',
+      'valueAxes': [{
+        'id': 'v1',
+        'axisAlpha': 0,
+        'position': 'left',
+        'ignoreAxisWidth': true
+      }],
+      'balloon': {
+        'borderThickness': 1,
+        'shadowAlpha': 0
+      },
+      'graphs': [{
+        'id': 'g1',
+        'balloon': {
+          'drop': true,
+          'adjustBorderColor': false,
+          'color': '#ffffff'
+        },
+        'bullet': 'round',
+        'bulletBorderAlpha': 1,
+        'bulletColor': '#FFFFFF',
+        'bulletSize': 5,
+        'hideBulletsCount': 50,
+        'lineThickness': 2,
+        'title': 'red line',
+        'useLineColorForBulletBorder': true,
+        'valueField': 'Some_Distance',
+        'balloonText': '<span style="font-size:18px;">[[value]]</span>'
+      }],
+      'chartScrollbar': {
+        'graph': 'g1',
+        'oppositeAxis': false,
+        'offset': 30,
+        'scrollbarHeight': 80,
+        'backgroundAlpha': 0,
+        'selectedBackgroundAlpha': 0.1,
+        'selectedBackgroundColor': '#888888',
+        'graphFillAlpha': 0,
+        'graphLineAlpha': 0.5,
+        'selectedGraphFillAlpha': 0,
+        'selectedGraphLineAlpha': 1,
+        'autoGridCount': true,
+        'color': '#AAAAAA'
+      },
+      'chartCursor': {
+        'pan': true,
+        'valueLineEnabled': true,
+        'valueLineBalloonEnabled': true,
+        'cursorAlpha': 1,
+        'cursorColor': '#258cbb',
+        'limitToGraph': 'g1',
+        'valueLineAlpha': 0.2,
+        'valueZoomable': true
+      },
+      'valueScrollbar': {
+        'oppositeAxis': false,
+        'offset': 50,
+        'scrollbarHeight': 10
+      },
+      'categoryField': 'Year',
+      'categoryAxis': {
+        'parseDates': true,
+        'dashLength': 1,
+        'minorGridEnabled': true
+      },
+      'export': {
+        'enabled': true
+      },
+      'dataProvider': this.vcuList
+    })
+    chart.addListener('rendered', zoomChart)
+
+    zoomChart()
+
+    function zoomChart () {
+      chart.zoomToIndexes(chart.dataProvider.length - 40, chart.dataProvider.length - 1)
+    }
   },
   methods: {
     getData: function () {
@@ -51,13 +124,101 @@ export default {
       .then(response => response.json())
       .then(json => {
         this.records = json
+        this.createChart()
       })
+    },
+    createChart: function () {
+      console.log(this.vcuList)
+      var chart = window.AmCharts.makeChart('chartdiv', {
+        'type': 'serial',
+        'theme': 'light',
+        'marginRight': 40,
+        'marginLeft': 40,
+        'autoMarginOffset': 20,
+        'mouseWheelZoomEnabled': true,
+        'dataDateFormat': 'YYYY-MM-DD',
+        'valueAxes': [{
+          'id': 'v1',
+          'axisAlpha': 0,
+          'position': 'left',
+          'ignoreAxisWidth': true
+        }],
+        'balloon': {
+          'borderThickness': 1,
+          'shadowAlpha': 0
+        },
+        'graphs': [{
+          'id': 'g1',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'bullet': 'round',
+          'bulletBorderAlpha': 1,
+          'bulletColor': '#FFFFFF',
+          'bulletSize': 5,
+          'hideBulletsCount': 50,
+          'lineThickness': 2,
+          'title': 'red line',
+          'useLineColorForBulletBorder': true,
+          'valueField': 'Some_Distance',
+          'balloonText': '<span style="font-size:18px;">[[value]]</span>'
+        }],
+        'chartScrollbar': {
+          'graph': 'g1',
+          'oppositeAxis': false,
+          'offset': 30,
+          'scrollbarHeight': 80,
+          'backgroundAlpha': 0,
+          'selectedBackgroundAlpha': 0.1,
+          'selectedBackgroundColor': '#888888',
+          'graphFillAlpha': 0,
+          'graphLineAlpha': 0.5,
+          'selectedGraphFillAlpha': 0,
+          'selectedGraphLineAlpha': 1,
+          'autoGridCount': true,
+          'color': '#AAAAAA'
+        },
+        'chartCursor': {
+          'pan': true,
+          'valueLineEnabled': true,
+          'valueLineBalloonEnabled': true,
+          'cursorAlpha': 1,
+          'cursorColor': '#258cbb',
+          'limitToGraph': 'g1',
+          'valueLineAlpha': 0.2,
+          'valueZoomable': true
+        },
+        'valueScrollbar': {
+          'oppositeAxis': false,
+          'offset': 50,
+          'scrollbarHeight': 10
+        },
+        'categoryField': 'Year',
+        'categoryAxis': {
+          'parseDates': true,
+          'dashLength': 1,
+          'minorGridEnabled': true
+        },
+        'export': {
+          'enabled': true
+        },
+        'dataProvider': this.vcuList
+      })
+      chart.addListener('rendered', zoomChart)
+
+      zoomChart()
+
+      function zoomChart () {
+        chart.zoomToIndexes(chart.dataProvider.length - 40, chart.dataProvider.length - 1)
+      }
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
   font-weight: normal;
