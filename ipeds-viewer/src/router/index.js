@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/components/Index'
+import National from '@/components/National'
 import State from '@/components/State'
 import School from '@/components/School'
 
@@ -12,6 +13,11 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index
+    },
+    {
+      path: '/national',
+      name: 'National',
+      component: National
     },
     {
       path: '/state',

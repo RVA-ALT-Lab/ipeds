@@ -4,7 +4,10 @@
       <nav class="sidebar">
         <ul>
           <li>
-            <router-link to="/">National</router-link>
+            <router-link to="/">Overview</router-link>
+          </li>
+          <li>
+            <router-link to="/national">National</router-link>
           </li>
           <li>
             <router-link to="/state">State</router-link>
@@ -23,7 +26,27 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      msg: 'National Summary',
+      records: []
+    }
+  },
+  created: function () {
+    this.getSchoolData()
+  },
+  methods: {
+    getSchoolData: function () {
+      fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/combined-results.json')
+      .then(response => response.json())
+      .then(json => {
+        this.records = json
+        console.log(this.records)
+      })
+    }
+  }
+
 }
 </script>
 
@@ -63,11 +86,20 @@ body {
 
 .sidebar ul li {
   position: relative;
-  padding: .75rem 0 .75rem 0;
+  height: 88px;
 }
 
 .sidebar ul li a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
   color: #fff;
   font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.sidebar ul li a.router-link-exact-active {
+  color: black;
+  background-color: #fff;
 }
 </style>
