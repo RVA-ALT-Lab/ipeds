@@ -14,10 +14,10 @@ import 'amcharts3/amcharts/serial'
 import 'amcharts3/amcharts/themes/light'
 
 export default {
-  name: 'HelloWorld',
+  name: 'State',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: 'National Summary',
       records: []
     }
   },
