@@ -1,6 +1,13 @@
 <template>
   <div class='hello'>
     <h1>{{ msg }}</h1>
+    <p>These statistics should help you compare national trends in distance education enrollments. You can filter by level using the dropdown menu.</p>
+    <select v-model="levelFilter">
+      <option value="1">All Enrollments</option>
+      <option value="2">Undergraduate</option>
+      <option value="3">Graduate</option>
+    </select>
+    <div id="chart-div"></div>
   </div>
 </template>
 
@@ -13,109 +20,85 @@ export default {
   name: 'National',
   data () {
     return {
-      msg: 'National Summary'
+      msg: 'National Summary',
+      levelFilter: '1'
     }
   },
   computed: {
+    nationalList: function () {
+      return this.$parent.nationalData.filter(item => {
+        return item.Level === parseInt(this.levelFilter)
+      })
+    }
   },
-  created: function () {
+  mounted: function () {
+    console.log(this.nationalList)
+    this.createChart()
   },
-  update: function () {
+  updated: function () {
+    console.log(this.nationalList)
+    this.createChart()
   },
   methods: {
-    getData: function () {
-      fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/combined-results.json')
-      .then(response => response.json())
-      .then(json => {
-        this.records = json
-      })
-    },
     createChart: function () {
-      console.log(this.vcuList)
-      var chart = window.AmCharts.makeChart('chartdiv', {
+      window.AmCharts.makeChart('chart-div', {
         'type': 'serial',
         'theme': 'light',
-        'marginRight': 40,
-        'marginLeft': 40,
-        'autoMarginOffset': 20,
-        'mouseWheelZoomEnabled': true,
-        'dataDateFormat': 'YYYY-MM-DD',
+        'legend': {
+          'horizontalGap': 10,
+          'maxColumns': 1,
+          'position': 'right',
+          'useGraphSettings': true,
+          'markerSize': 10
+        },
+        'dataProvider': this.nationalList,
         'valueAxes': [{
-          'id': 'v1',
-          'axisAlpha': 0,
-          'position': 'left',
-          'ignoreAxisWidth': true
+          'stackType': 'regular',
+          'axisAlpha': 0.5,
+          'gridAlpha': 0
         }],
-        'balloon': {
-          'borderThickness': 1,
-          'shadowAlpha': 0
-        },
         'graphs': [{
-          'id': 'g1',
-          'balloon': {
-            'drop': true,
-            'adjustBorderColor': false,
-            'color': '#ffffff'
-          },
-          'bullet': 'round',
-          'bulletBorderAlpha': 1,
-          'bulletColor': '#FFFFFF',
-          'bulletSize': 5,
-          'hideBulletsCount': 50,
-          'lineThickness': 2,
-          'title': 'red line',
-          'useLineColorForBulletBorder': true,
-          'valueField': 'Some_Distance',
-          'balloonText': '<span style="font-size:18px;">[[value]]</span>'
+          'ballonText': '',
+          'fillAlphas': 0.8,
+          'labelText': '[[value]]',
+          'lineAlpha': 0.3,
+          'title': 'Some Distance',
+          'type': 'column',
+          'color': '#000',
+          'valueField': 'Some_Distance'
+        },
+        {
+          'ballonText': '',
+          'fillAlphas': 0.8,
+          'labelText': '[[value]]',
+          'lineAlpha': 0.3,
+          'title': 'Exclusively Distance',
+          'type': 'column',
+          'color': '#000',
+          'valueField': 'Exclusive_Distance'
+        },
+        {
+          'ballonText': '',
+          'fillAlphas': 0.8,
+          'labelText': '[[value]]',
+          'lineAlpha': 0.3,
+          'title': 'No Distance',
+          'type': 'column',
+          'color': '#000',
+          'valueField': 'None_Distance'
         }],
-        'chartScrollbar': {
-          'graph': 'g1',
-          'oppositeAxis': false,
-          'offset': 30,
-          'scrollbarHeight': 80,
-          'backgroundAlpha': 0,
-          'selectedBackgroundAlpha': 0.1,
-          'selectedBackgroundColor': '#888888',
-          'graphFillAlpha': 0,
-          'graphLineAlpha': 0.5,
-          'selectedGraphFillAlpha': 0,
-          'selectedGraphLineAlpha': 1,
-          'autoGridCount': true,
-          'color': '#AAAAAA'
-        },
-        'chartCursor': {
-          'pan': true,
-          'valueLineEnabled': true,
-          'valueLineBalloonEnabled': true,
-          'cursorAlpha': 1,
-          'cursorColor': '#258cbb',
-          'limitToGraph': 'g1',
-          'valueLineAlpha': 0.2,
-          'valueZoomable': true
-        },
-        'valueScrollbar': {
-          'oppositeAxis': false,
-          'offset': 50,
-          'scrollbarHeight': 10
-        },
+        'rotate': true,
         'categoryField': 'Year',
         'categoryAxis': {
-          'parseDates': true,
-          'dashLength': 1,
-          'minorGridEnabled': true
+          'gridPosition': 'start',
+          'axisAlpha': 0,
+          'gridAlpha': 0,
+          'position': 'left'
         },
         'export': {
           'enabled': true
-        },
-        'dataProvider': this.vcuList
+        }
       })
-      chart.addListener('rendered', zoomChart)
-
-      zoomChart()
-
-      function zoomChart () {
-        chart.zoomToIndexes(chart.dataProvider.length - 40, chart.dataProvider.length - 1)
-      }
     }
   }
 }
@@ -123,4 +106,7 @@ export default {
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style scoped>
+#chart-div {
+  height: 500px;
+}
 </style>

@@ -18,7 +18,7 @@
         </ul>
       </nav>
       <div class="main-view">
-        <router-view/>
+            <router-view/>
       </div>
     </div>
   </div>
@@ -30,11 +30,13 @@ export default {
   data () {
     return {
       msg: 'National Summary',
-      records: []
+      records: [],
+      nationalData: []
     }
   },
   created: function () {
     this.getSchoolData()
+    this.getNationalData()
   },
   methods: {
     getSchoolData: function () {
@@ -43,6 +45,14 @@ export default {
       .then(json => {
         this.records = json
         console.log(this.records)
+      })
+    },
+    getNationalData: function () {
+      fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/national-summary.json')
+      .then(response => response.json())
+      .then(json => {
+        this.nationalData = json
+        console.log(this.nationalData)
       })
     }
   }
@@ -61,11 +71,12 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   height: 100%;
 }
-
+.main-view {
+  padding: 1rem;
+}
 .wrapper {
   height: 100%;
   display: grid;
