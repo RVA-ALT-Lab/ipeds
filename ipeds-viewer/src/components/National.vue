@@ -5,7 +5,9 @@
     <select v-model="levelFilter">
       <option value="1">All Enrollments</option>
       <option value="2">Undergraduate</option>
-      <option value="3">Graduate</option>
+      <option value="3">Degree/certificate seeking</option>
+      <option value="11">Non-degree/certificate seeking</option>
+      <option value="12">Graduate</option>
     </select>
     <div id="chart-div"></div>
   </div>
