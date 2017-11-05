@@ -13,24 +13,24 @@ export default {
   name: 'State',
   data () {
     return {
-      msg: 'State Summary',
-      records: []
+      msg: 'State Summary'
     }
   },
   computed: {
+    stateList: function () {
+      return this.$parent.records.filter(item => {
+        return !this.stateList.contains()
+      })
+    }
   },
   created: function () {
   },
   update: function () {
   },
+  mounted: function () {
+    console.log(this.stateList)
+  },
   methods: {
-    getData: function () {
-      fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/combined-results.json')
-      .then(response => response.json())
-      .then(json => {
-        this.records = json
-      })
-    },
     createChart: function () {
       console.log(this.vcuList)
       var chart = window.AmCharts.makeChart('chartdiv', {
