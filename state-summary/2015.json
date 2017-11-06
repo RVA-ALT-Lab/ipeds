@@ -1,6 +1,6 @@
 [
 	{
-		"State" : AK,
+		"State" : "AK",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -13,7 +13,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : AK,
+		"State" : "AK",
 		"Level" : 1,
 		"Total_Distance" : 32301,
 		"Exclusive_Distance" : 6755,
@@ -26,7 +26,7 @@
 		"Location_Unknown_Students" : 12
 	},
 	{
-		"State" : AK,
+		"State" : "AK",
 		"Level" : 2,
 		"Total_Distance" : 29782,
 		"Exclusive_Distance" : 5711,
@@ -39,7 +39,7 @@
 		"Location_Unknown_Students" : 8
 	},
 	{
-		"State" : AK,
+		"State" : "AK",
 		"Level" : 3,
 		"Total_Distance" : 22835,
 		"Exclusive_Distance" : 3573,
@@ -52,7 +52,7 @@
 		"Location_Unknown_Students" : 5
 	},
 	{
-		"State" : AK,
+		"State" : "AK",
 		"Level" : 11,
 		"Total_Distance" : 6947,
 		"Exclusive_Distance" : 2138,
@@ -65,7 +65,7 @@
 		"Location_Unknown_Students" : 3
 	},
 	{
-		"State" : AK,
+		"State" : "AK",
 		"Level" : 12,
 		"Total_Distance" : 2519,
 		"Exclusive_Distance" : 1044,
@@ -78,7 +78,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : AL,
+		"State" : "AL",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -91,7 +91,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : AL,
+		"State" : "AL",
 		"Level" : 1,
 		"Total_Distance" : 304476,
 		"Exclusive_Distance" : 58262,
@@ -104,7 +104,7 @@
 		"Location_Unknown_Students" : 18
 	},
 	{
-		"State" : AL,
+		"State" : "AL",
 		"Level" : 2,
 		"Total_Distance" : 259167,
 		"Exclusive_Distance" : 37749,
@@ -117,7 +117,7 @@
 		"Location_Unknown_Students" : 11
 	},
 	{
-		"State" : AL,
+		"State" : "AL",
 		"Level" : 3,
 		"Total_Distance" : 243978,
 		"Exclusive_Distance" : 35296,
@@ -130,7 +130,7 @@
 		"Location_Unknown_Students" : 11
 	},
 	{
-		"State" : AL,
+		"State" : "AL",
 		"Level" : 11,
 		"Total_Distance" : 14094,
 		"Exclusive_Distance" : 2453,
@@ -143,7 +143,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : AL,
+		"State" : "AL",
 		"Level" : 12,
 		"Total_Distance" : 45309,
 		"Exclusive_Distance" : 20513,
@@ -156,7 +156,7 @@
 		"Location_Unknown_Students" : 7
 	},
 	{
-		"State" : AR,
+		"State" : "AR",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -169,7 +169,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : AR,
+		"State" : "AR",
 		"Level" : 1,
 		"Total_Distance" : 171577,
 		"Exclusive_Distance" : 20048,
@@ -182,7 +182,7 @@
 		"Location_Unknown_Students" : 68
 	},
 	{
-		"State" : AR,
+		"State" : "AR",
 		"Level" : 2,
 		"Total_Distance" : 151805,
 		"Exclusive_Distance" : 13005,
@@ -195,7 +195,7 @@
 		"Location_Unknown_Students" : 15
 	},
 	{
-		"State" : AR,
+		"State" : "AR",
 		"Level" : 3,
 		"Total_Distance" : 127069,
 		"Exclusive_Distance" : 10674,
@@ -208,7 +208,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : AR,
+		"State" : "AR",
 		"Level" : 11,
 		"Total_Distance" : 21952,
 		"Exclusive_Distance" : 2331,
@@ -221,7 +221,7 @@
 		"Location_Unknown_Students" : 15
 	},
 	{
-		"State" : AR,
+		"State" : "AR",
 		"Level" : 12,
 		"Total_Distance" : 19772,
 		"Exclusive_Distance" : 7043,
@@ -234,7 +234,7 @@
 		"Location_Unknown_Students" : 53
 	},
 	{
-		"State" : AS,
+		"State" : "AS",
 		"Level" : 1,
 		"Total_Distance" : 1285,
 		"Exclusive_Distance" : 0,
@@ -247,7 +247,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : AS,
+		"State" : "AS",
 		"Level" : 2,
 		"Total_Distance" : 1285,
 		"Exclusive_Distance" : 0,
@@ -260,7 +260,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : AS,
+		"State" : "AS",
 		"Level" : 3,
 		"Total_Distance" : 1285,
 		"Exclusive_Distance" : 0,
@@ -273,7 +273,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : AZ,
+		"State" : "AZ",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -286,7 +286,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : AZ,
+		"State" : "AZ",
 		"Level" : 1,
 		"Total_Distance" : 659126,
 		"Exclusive_Distance" : 299827,
@@ -299,7 +299,7 @@
 		"Location_Unknown_Students" : 98
 	},
 	{
-		"State" : AZ,
+		"State" : "AZ",
 		"Level" : 2,
 		"Total_Distance" : 550771,
 		"Exclusive_Distance" : 222282,
@@ -312,7 +312,7 @@
 		"Location_Unknown_Students" : 95
 	},
 	{
-		"State" : AZ,
+		"State" : "AZ",
 		"Level" : 3,
 		"Total_Distance" : 482677,
 		"Exclusive_Distance" : 209721,
@@ -325,7 +325,7 @@
 		"Location_Unknown_Students" : 74
 	},
 	{
-		"State" : AZ,
+		"State" : "AZ",
 		"Level" : 11,
 		"Total_Distance" : 59915,
 		"Exclusive_Distance" : 11947,
@@ -338,7 +338,7 @@
 		"Location_Unknown_Students" : 21
 	},
 	{
-		"State" : AZ,
+		"State" : "AZ",
 		"Level" : 12,
 		"Total_Distance" : 108355,
 		"Exclusive_Distance" : 77545,
@@ -351,7 +351,7 @@
 		"Location_Unknown_Students" : 3
 	},
 	{
-		"State" : CA,
+		"State" : "CA",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -364,7 +364,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : CA,
+		"State" : "CA",
 		"Level" : 1,
 		"Total_Distance" : 2740921,
 		"Exclusive_Distance" : 255181,
@@ -377,7 +377,7 @@
 		"Location_Unknown_Students" : 223
 	},
 	{
-		"State" : CA,
+		"State" : "CA",
 		"Level" : 2,
 		"Total_Distance" : 2464803,
 		"Exclusive_Distance" : 217002,
@@ -390,7 +390,7 @@
 		"Location_Unknown_Students" : 59
 	},
 	{
-		"State" : CA,
+		"State" : "CA",
 		"Level" : 3,
 		"Total_Distance" : 2244741,
 		"Exclusive_Distance" : 195205,
@@ -403,7 +403,7 @@
 		"Location_Unknown_Students" : 42
 	},
 	{
-		"State" : CA,
+		"State" : "CA",
 		"Level" : 11,
 		"Total_Distance" : 175444,
 		"Exclusive_Distance" : 21675,
@@ -416,7 +416,7 @@
 		"Location_Unknown_Students" : 17
 	},
 	{
-		"State" : CA,
+		"State" : "CA",
 		"Level" : 12,
 		"Total_Distance" : 276118,
 		"Exclusive_Distance" : 38179,
@@ -429,7 +429,7 @@
 		"Location_Unknown_Students" : 164
 	},
 	{
-		"State" : CO,
+		"State" : "CO",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -442,7 +442,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : CO,
+		"State" : "CO",
 		"Level" : 1,
 		"Total_Distance" : 361588,
 		"Exclusive_Distance" : 73805,
@@ -455,7 +455,7 @@
 		"Location_Unknown_Students" : 880
 	},
 	{
-		"State" : CO,
+		"State" : "CO",
 		"Level" : 2,
 		"Total_Distance" : 302902,
 		"Exclusive_Distance" : 53696,
@@ -468,7 +468,7 @@
 		"Location_Unknown_Students" : 114
 	},
 	{
-		"State" : CO,
+		"State" : "CO",
 		"Level" : 3,
 		"Total_Distance" : 263459,
 		"Exclusive_Distance" : 50360,
@@ -481,7 +481,7 @@
 		"Location_Unknown_Students" : 114
 	},
 	{
-		"State" : CO,
+		"State" : "CO",
 		"Level" : 11,
 		"Total_Distance" : 35722,
 		"Exclusive_Distance" : 3276,
@@ -494,7 +494,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : CO,
+		"State" : "CO",
 		"Level" : 12,
 		"Total_Distance" : 58686,
 		"Exclusive_Distance" : 20109,
@@ -507,7 +507,7 @@
 		"Location_Unknown_Students" : 766
 	},
 	{
-		"State" : CT,
+		"State" : "CT",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -520,7 +520,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : CT,
+		"State" : "CT",
 		"Level" : 1,
 		"Total_Distance" : 210386,
 		"Exclusive_Distance" : 16700,
@@ -533,7 +533,7 @@
 		"Location_Unknown_Students" : 12
 	},
 	{
-		"State" : CT,
+		"State" : "CT",
 		"Level" : 2,
 		"Total_Distance" : 173767,
 		"Exclusive_Distance" : 12559,
@@ -546,7 +546,7 @@
 		"Location_Unknown_Students" : 7
 	},
 	{
-		"State" : CT,
+		"State" : "CT",
 		"Level" : 3,
 		"Total_Distance" : 154106,
 		"Exclusive_Distance" : 10813,
@@ -559,7 +559,7 @@
 		"Location_Unknown_Students" : 7
 	},
 	{
-		"State" : CT,
+		"State" : "CT",
 		"Level" : 11,
 		"Total_Distance" : 10235,
 		"Exclusive_Distance" : 1746,
@@ -572,7 +572,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : CT,
+		"State" : "CT",
 		"Level" : 12,
 		"Total_Distance" : 36619,
 		"Exclusive_Distance" : 4141,
@@ -585,7 +585,7 @@
 		"Location_Unknown_Students" : 5
 	},
 	{
-		"State" : DC,
+		"State" : "DC",
 		"Level" : 1,
 		"Total_Distance" : 95086,
 		"Exclusive_Distance" : 13856,
@@ -598,7 +598,7 @@
 		"Location_Unknown_Students" : 24
 	},
 	{
-		"State" : DC,
+		"State" : "DC",
 		"Level" : 2,
 		"Total_Distance" : 51645,
 		"Exclusive_Distance" : 5380,
@@ -611,7 +611,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : DC,
+		"State" : "DC",
 		"Level" : 3,
 		"Total_Distance" : 48802,
 		"Exclusive_Distance" : 5203,
@@ -624,7 +624,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : DC,
+		"State" : "DC",
 		"Level" : 11,
 		"Total_Distance" : 1752,
 		"Exclusive_Distance" : 50,
@@ -637,7 +637,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : DC,
+		"State" : "DC",
 		"Level" : 12,
 		"Total_Distance" : 43441,
 		"Exclusive_Distance" : 8476,
@@ -650,7 +650,7 @@
 		"Location_Unknown_Students" : 22
 	},
 	{
-		"State" : DE,
+		"State" : "DE",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -663,7 +663,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : DE,
+		"State" : "DE",
 		"Level" : 1,
 		"Total_Distance" : 61768,
 		"Exclusive_Distance" : 6165,
@@ -676,7 +676,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : DE,
+		"State" : "DE",
 		"Level" : 2,
 		"Total_Distance" : 49357,
 		"Exclusive_Distance" : 3996,
@@ -689,7 +689,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : DE,
+		"State" : "DE",
 		"Level" : 3,
 		"Total_Distance" : 45399,
 		"Exclusive_Distance" : 3740,
@@ -702,7 +702,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : DE,
+		"State" : "DE",
 		"Level" : 11,
 		"Total_Distance" : 2582,
 		"Exclusive_Distance" : 209,
@@ -715,7 +715,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : DE,
+		"State" : "DE",
 		"Level" : 12,
 		"Total_Distance" : 12411,
 		"Exclusive_Distance" : 2169,
@@ -728,7 +728,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : FL,
+		"State" : "FL",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -741,7 +741,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : FL,
+		"State" : "FL",
 		"Level" : 1,
 		"Total_Distance" : 1136653,
 		"Exclusive_Distance" : 181419,
@@ -754,7 +754,7 @@
 		"Location_Unknown_Students" : 16095
 	},
 	{
-		"State" : FL,
+		"State" : "FL",
 		"Level" : 2,
 		"Total_Distance" : 1009763,
 		"Exclusive_Distance" : 143903,
@@ -767,7 +767,7 @@
 		"Location_Unknown_Students" : 11640
 	},
 	{
-		"State" : FL,
+		"State" : "FL",
 		"Level" : 3,
 		"Total_Distance" : 901711,
 		"Exclusive_Distance" : 133393,
@@ -780,7 +780,7 @@
 		"Location_Unknown_Students" : 10938
 	},
 	{
-		"State" : FL,
+		"State" : "FL",
 		"Level" : 11,
 		"Total_Distance" : 86791,
 		"Exclusive_Distance" : 10510,
@@ -793,7 +793,7 @@
 		"Location_Unknown_Students" : 702
 	},
 	{
-		"State" : FL,
+		"State" : "FL",
 		"Level" : 12,
 		"Total_Distance" : 126890,
 		"Exclusive_Distance" : 37516,
@@ -806,7 +806,7 @@
 		"Location_Unknown_Students" : 4455
 	},
 	{
-		"State" : FM,
+		"State" : "FM",
 		"Level" : 1,
 		"Total_Distance" : 2215,
 		"Exclusive_Distance" : 0,
@@ -819,7 +819,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : FM,
+		"State" : "FM",
 		"Level" : 2,
 		"Total_Distance" : 2215,
 		"Exclusive_Distance" : 0,
@@ -832,7 +832,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : FM,
+		"State" : "FM",
 		"Level" : 3,
 		"Total_Distance" : 2213,
 		"Exclusive_Distance" : 0,
@@ -845,7 +845,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : FM,
+		"State" : "FM",
 		"Level" : 11,
 		"Total_Distance" : 2,
 		"Exclusive_Distance" : 0,
@@ -858,7 +858,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : GA,
+		"State" : "GA",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -871,7 +871,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : GA,
+		"State" : "GA",
 		"Level" : 1,
 		"Total_Distance" : 538624,
 		"Exclusive_Distance" : 61838,
@@ -884,7 +884,7 @@
 		"Location_Unknown_Students" : 381
 	},
 	{
-		"State" : GA,
+		"State" : "GA",
 		"Level" : 2,
 		"Total_Distance" : 464113,
 		"Exclusive_Distance" : 43557,
@@ -897,7 +897,7 @@
 		"Location_Unknown_Students" : 238
 	},
 	{
-		"State" : GA,
+		"State" : "GA",
 		"Level" : 3,
 		"Total_Distance" : 427836,
 		"Exclusive_Distance" : 39391,
@@ -910,7 +910,7 @@
 		"Location_Unknown_Students" : 234
 	},
 	{
-		"State" : GA,
+		"State" : "GA",
 		"Level" : 11,
 		"Total_Distance" : 29291,
 		"Exclusive_Distance" : 4166,
@@ -923,7 +923,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : GA,
+		"State" : "GA",
 		"Level" : 12,
 		"Total_Distance" : 74511,
 		"Exclusive_Distance" : 18281,
@@ -936,7 +936,7 @@
 		"Location_Unknown_Students" : 143
 	},
 	{
-		"State" : GU,
+		"State" : "GU",
 		"Level" : 1,
 		"Total_Distance" : 6395,
 		"Exclusive_Distance" : 61,
@@ -949,7 +949,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : GU,
+		"State" : "GU",
 		"Level" : 2,
 		"Total_Distance" : 6095,
 		"Exclusive_Distance" : 18,
@@ -962,7 +962,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : GU,
+		"State" : "GU",
 		"Level" : 3,
 		"Total_Distance" : 5688,
 		"Exclusive_Distance" : 16,
@@ -975,7 +975,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : GU,
+		"State" : "GU",
 		"Level" : 11,
 		"Total_Distance" : 407,
 		"Exclusive_Distance" : 2,
@@ -988,7 +988,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : GU,
+		"State" : "GU",
 		"Level" : 12,
 		"Total_Distance" : 300,
 		"Exclusive_Distance" : 43,
@@ -1001,7 +1001,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : HI,
+		"State" : "HI",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1014,7 +1014,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : HI,
+		"State" : "HI",
 		"Level" : 1,
 		"Total_Distance" : 69696,
 		"Exclusive_Distance" : 8133,
@@ -1027,7 +1027,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : HI,
+		"State" : "HI",
 		"Level" : 2,
 		"Total_Distance" : 61731,
 		"Exclusive_Distance" : 7427,
@@ -1040,7 +1040,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : HI,
+		"State" : "HI",
 		"Level" : 3,
 		"Total_Distance" : 52202,
 		"Exclusive_Distance" : 4077,
@@ -1053,7 +1053,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : HI,
+		"State" : "HI",
 		"Level" : 11,
 		"Total_Distance" : 9164,
 		"Exclusive_Distance" : 3350,
@@ -1066,7 +1066,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : HI,
+		"State" : "HI",
 		"Level" : 12,
 		"Total_Distance" : 7965,
 		"Exclusive_Distance" : 706,
@@ -1079,7 +1079,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : IA,
+		"State" : "IA",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1092,7 +1092,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : IA,
+		"State" : "IA",
 		"Level" : 1,
 		"Total_Distance" : 276801,
 		"Exclusive_Distance" : 70644,
@@ -1105,7 +1105,7 @@
 		"Location_Unknown_Students" : 286
 	},
 	{
-		"State" : IA,
+		"State" : "IA",
 		"Level" : 2,
 		"Total_Distance" : 238707,
 		"Exclusive_Distance" : 53414,
@@ -1118,7 +1118,7 @@
 		"Location_Unknown_Students" : 204
 	},
 	{
-		"State" : IA,
+		"State" : "IA",
 		"Level" : 3,
 		"Total_Distance" : 196107,
 		"Exclusive_Distance" : 46745,
@@ -1131,7 +1131,7 @@
 		"Location_Unknown_Students" : 198
 	},
 	{
-		"State" : IA,
+		"State" : "IA",
 		"Level" : 11,
 		"Total_Distance" : 40905,
 		"Exclusive_Distance" : 6669,
@@ -1144,7 +1144,7 @@
 		"Location_Unknown_Students" : 6
 	},
 	{
-		"State" : IA,
+		"State" : "IA",
 		"Level" : 12,
 		"Total_Distance" : 38094,
 		"Exclusive_Distance" : 17230,
@@ -1157,7 +1157,7 @@
 		"Location_Unknown_Students" : 82
 	},
 	{
-		"State" : ID,
+		"State" : "ID",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1170,7 +1170,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : ID,
+		"State" : "ID",
 		"Level" : 1,
 		"Total_Distance" : 122778,
 		"Exclusive_Distance" : 34129,
@@ -1183,7 +1183,7 @@
 		"Location_Unknown_Students" : 99
 	},
 	{
-		"State" : ID,
+		"State" : "ID",
 		"Level" : 2,
 		"Total_Distance" : 114914,
 		"Exclusive_Distance" : 31719,
@@ -1196,7 +1196,7 @@
 		"Location_Unknown_Students" : 92
 	},
 	{
-		"State" : ID,
+		"State" : "ID",
 		"Level" : 3,
 		"Total_Distance" : 84367,
 		"Exclusive_Distance" : 15318,
@@ -1209,7 +1209,7 @@
 		"Location_Unknown_Students" : 78
 	},
 	{
-		"State" : ID,
+		"State" : "ID",
 		"Level" : 11,
 		"Total_Distance" : 28909,
 		"Exclusive_Distance" : 16401,
@@ -1222,7 +1222,7 @@
 		"Location_Unknown_Students" : 14
 	},
 	{
-		"State" : ID,
+		"State" : "ID",
 		"Level" : 12,
 		"Total_Distance" : 7864,
 		"Exclusive_Distance" : 2410,
@@ -1235,7 +1235,7 @@
 		"Location_Unknown_Students" : 7
 	},
 	{
-		"State" : IL,
+		"State" : "IL",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1248,7 +1248,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : IL,
+		"State" : "IL",
 		"Level" : 1,
 		"Total_Distance" : 817042,
 		"Exclusive_Distance" : 100236,
@@ -1261,7 +1261,7 @@
 		"Location_Unknown_Students" : 736
 	},
 	{
-		"State" : IL,
+		"State" : "IL",
 		"Level" : 2,
 		"Total_Distance" : 665282,
 		"Exclusive_Distance" : 66372,
@@ -1274,7 +1274,7 @@
 		"Location_Unknown_Students" : 591
 	},
 	{
-		"State" : IL,
+		"State" : "IL",
 		"Level" : 3,
 		"Total_Distance" : 553234,
 		"Exclusive_Distance" : 61283,
@@ -1287,7 +1287,7 @@
 		"Location_Unknown_Students" : 580
 	},
 	{
-		"State" : IL,
+		"State" : "IL",
 		"Level" : 11,
 		"Total_Distance" : 98045,
 		"Exclusive_Distance" : 5078,
@@ -1300,7 +1300,7 @@
 		"Location_Unknown_Students" : 11
 	},
 	{
-		"State" : IL,
+		"State" : "IL",
 		"Level" : 12,
 		"Total_Distance" : 151760,
 		"Exclusive_Distance" : 33864,
@@ -1313,7 +1313,7 @@
 		"Location_Unknown_Students" : 145
 	},
 	{
-		"State" : IN,
+		"State" : "IN",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1326,7 +1326,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : IN,
+		"State" : "IN",
 		"Level" : 1,
 		"Total_Distance" : 434117,
 		"Exclusive_Distance" : 53836,
@@ -1339,7 +1339,7 @@
 		"Location_Unknown_Students" : 7
 	},
 	{
-		"State" : IN,
+		"State" : "IN",
 		"Level" : 2,
 		"Total_Distance" : 373930,
 		"Exclusive_Distance" : 37387,
@@ -1352,7 +1352,7 @@
 		"Location_Unknown_Students" : 6
 	},
 	{
-		"State" : IN,
+		"State" : "IN",
 		"Level" : 3,
 		"Total_Distance" : 318669,
 		"Exclusive_Distance" : 33789,
@@ -1365,7 +1365,7 @@
 		"Location_Unknown_Students" : 6
 	},
 	{
-		"State" : IN,
+		"State" : "IN",
 		"Level" : 11,
 		"Total_Distance" : 50530,
 		"Exclusive_Distance" : 3598,
@@ -1378,7 +1378,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : IN,
+		"State" : "IN",
 		"Level" : 12,
 		"Total_Distance" : 60187,
 		"Exclusive_Distance" : 16449,
@@ -1391,7 +1391,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : KS,
+		"State" : "KS",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1404,7 +1404,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : KS,
+		"State" : "KS",
 		"Level" : 1,
 		"Total_Distance" : 222876,
 		"Exclusive_Distance" : 45326,
@@ -1417,7 +1417,7 @@
 		"Location_Unknown_Students" : 1876
 	},
 	{
-		"State" : KS,
+		"State" : "KS",
 		"Level" : 2,
 		"Total_Distance" : 194562,
 		"Exclusive_Distance" : 35791,
@@ -1430,7 +1430,7 @@
 		"Location_Unknown_Students" : 1524
 	},
 	{
-		"State" : KS,
+		"State" : "KS",
 		"Level" : 3,
 		"Total_Distance" : 159538,
 		"Exclusive_Distance" : 31165,
@@ -1443,7 +1443,7 @@
 		"Location_Unknown_Students" : 1446
 	},
 	{
-		"State" : KS,
+		"State" : "KS",
 		"Level" : 11,
 		"Total_Distance" : 33700,
 		"Exclusive_Distance" : 4626,
@@ -1456,7 +1456,7 @@
 		"Location_Unknown_Students" : 78
 	},
 	{
-		"State" : KS,
+		"State" : "KS",
 		"Level" : 12,
 		"Total_Distance" : 28314,
 		"Exclusive_Distance" : 9535,
@@ -1469,7 +1469,7 @@
 		"Location_Unknown_Students" : 352
 	},
 	{
-		"State" : KY,
+		"State" : "KY",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1482,7 +1482,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : KY,
+		"State" : "KY",
 		"Level" : 1,
 		"Total_Distance" : 262707,
 		"Exclusive_Distance" : 41114,
@@ -1495,7 +1495,7 @@
 		"Location_Unknown_Students" : 3
 	},
 	{
-		"State" : KY,
+		"State" : "KY",
 		"Level" : 2,
 		"Total_Distance" : 224159,
 		"Exclusive_Distance" : 27551,
@@ -1508,7 +1508,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : KY,
+		"State" : "KY",
 		"Level" : 3,
 		"Total_Distance" : 187055,
 		"Exclusive_Distance" : 24653,
@@ -1521,7 +1521,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : KY,
+		"State" : "KY",
 		"Level" : 11,
 		"Total_Distance" : 34042,
 		"Exclusive_Distance" : 2898,
@@ -1534,7 +1534,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : KY,
+		"State" : "KY",
 		"Level" : 12,
 		"Total_Distance" : 38548,
 		"Exclusive_Distance" : 13563,
@@ -1547,7 +1547,7 @@
 		"Location_Unknown_Students" : 3
 	},
 	{
-		"State" : LA,
+		"State" : "LA",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1560,7 +1560,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : LA,
+		"State" : "LA",
 		"Level" : 1,
 		"Total_Distance" : 255904,
 		"Exclusive_Distance" : 19093,
@@ -1573,7 +1573,7 @@
 		"Location_Unknown_Students" : 21
 	},
 	{
-		"State" : LA,
+		"State" : "LA",
 		"Level" : 2,
 		"Total_Distance" : 223606,
 		"Exclusive_Distance" : 12862,
@@ -1586,7 +1586,7 @@
 		"Location_Unknown_Students" : 14
 	},
 	{
-		"State" : LA,
+		"State" : "LA",
 		"Level" : 3,
 		"Total_Distance" : 188120,
 		"Exclusive_Distance" : 11012,
@@ -1599,7 +1599,7 @@
 		"Location_Unknown_Students" : 12
 	},
 	{
-		"State" : LA,
+		"State" : "LA",
 		"Level" : 11,
 		"Total_Distance" : 27113,
 		"Exclusive_Distance" : 1799,
@@ -1612,7 +1612,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : LA,
+		"State" : "LA",
 		"Level" : 12,
 		"Total_Distance" : 32298,
 		"Exclusive_Distance" : 6231,
@@ -1625,7 +1625,7 @@
 		"Location_Unknown_Students" : 7
 	},
 	{
-		"State" : MA,
+		"State" : "MA",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1638,7 +1638,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : MA,
+		"State" : "MA",
 		"Level" : 1,
 		"Total_Distance" : 518879,
 		"Exclusive_Distance" : 38116,
@@ -1651,7 +1651,7 @@
 		"Location_Unknown_Students" : 684
 	},
 	{
-		"State" : MA,
+		"State" : "MA",
 		"Level" : 2,
 		"Total_Distance" : 383189,
 		"Exclusive_Distance" : 17925,
@@ -1664,7 +1664,7 @@
 		"Location_Unknown_Students" : 119
 	},
 	{
-		"State" : MA,
+		"State" : "MA",
 		"Level" : 3,
 		"Total_Distance" : 352272,
 		"Exclusive_Distance" : 14971,
@@ -1677,7 +1677,7 @@
 		"Location_Unknown_Students" : 100
 	},
 	{
-		"State" : MA,
+		"State" : "MA",
 		"Level" : 11,
 		"Total_Distance" : 23185,
 		"Exclusive_Distance" : 2954,
@@ -1690,7 +1690,7 @@
 		"Location_Unknown_Students" : 19
 	},
 	{
-		"State" : MA,
+		"State" : "MA",
 		"Level" : 12,
 		"Total_Distance" : 135690,
 		"Exclusive_Distance" : 20191,
@@ -1703,7 +1703,7 @@
 		"Location_Unknown_Students" : 565
 	},
 	{
-		"State" : MD,
+		"State" : "MD",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1716,7 +1716,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : MD,
+		"State" : "MD",
 		"Level" : 1,
 		"Total_Distance" : 373696,
 		"Exclusive_Distance" : 68588,
@@ -1729,7 +1729,7 @@
 		"Location_Unknown_Students" : 89
 	},
 	{
-		"State" : MD,
+		"State" : "MD",
 		"Level" : 2,
 		"Total_Distance" : 303503,
 		"Exclusive_Distance" : 46184,
@@ -1742,7 +1742,7 @@
 		"Location_Unknown_Students" : 81
 	},
 	{
-		"State" : MD,
+		"State" : "MD",
 		"Level" : 3,
 		"Total_Distance" : 276381,
 		"Exclusive_Distance" : 42763,
@@ -1755,7 +1755,7 @@
 		"Location_Unknown_Students" : 75
 	},
 	{
-		"State" : MD,
+		"State" : "MD",
 		"Level" : 11,
 		"Total_Distance" : 21882,
 		"Exclusive_Distance" : 3361,
@@ -1768,7 +1768,7 @@
 		"Location_Unknown_Students" : 6
 	},
 	{
-		"State" : MD,
+		"State" : "MD",
 		"Level" : 12,
 		"Total_Distance" : 70193,
 		"Exclusive_Distance" : 22404,
@@ -1781,7 +1781,7 @@
 		"Location_Unknown_Students" : 8
 	},
 	{
-		"State" : ME,
+		"State" : "ME",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1794,7 +1794,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : ME,
+		"State" : "ME",
 		"Level" : 1,
 		"Total_Distance" : 73049,
 		"Exclusive_Distance" : 11766,
@@ -1807,7 +1807,7 @@
 		"Location_Unknown_Students" : 5
 	},
 	{
-		"State" : ME,
+		"State" : "ME",
 		"Level" : 2,
 		"Total_Distance" : 63582,
 		"Exclusive_Distance" : 7855,
@@ -1820,7 +1820,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : ME,
+		"State" : "ME",
 		"Level" : 3,
 		"Total_Distance" : 52870,
 		"Exclusive_Distance" : 4856,
@@ -1833,7 +1833,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : ME,
+		"State" : "ME",
 		"Level" : 11,
 		"Total_Distance" : 9378,
 		"Exclusive_Distance" : 2999,
@@ -1846,7 +1846,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : ME,
+		"State" : "ME",
 		"Level" : 12,
 		"Total_Distance" : 9467,
 		"Exclusive_Distance" : 3911,
@@ -1859,7 +1859,7 @@
 		"Location_Unknown_Students" : 5
 	},
 	{
-		"State" : MH,
+		"State" : "MH",
 		"Level" : 1,
 		"Total_Distance" : 995,
 		"Exclusive_Distance" : 6,
@@ -1872,7 +1872,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : MH,
+		"State" : "MH",
 		"Level" : 2,
 		"Total_Distance" : 995,
 		"Exclusive_Distance" : 6,
@@ -1885,7 +1885,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : MH,
+		"State" : "MH",
 		"Level" : 3,
 		"Total_Distance" : 989,
 		"Exclusive_Distance" : 6,
@@ -1898,7 +1898,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : MH,
+		"State" : "MH",
 		"Level" : 11,
 		"Total_Distance" : 6,
 		"Exclusive_Distance" : 0,
@@ -1911,7 +1911,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : MI,
+		"State" : "MI",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -1924,7 +1924,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : MI,
+		"State" : "MI",
 		"Level" : 1,
 		"Total_Distance" : 613929,
 		"Exclusive_Distance" : 50956,
@@ -1937,7 +1937,7 @@
 		"Location_Unknown_Students" : 1449
 	},
 	{
-		"State" : MI,
+		"State" : "MI",
 		"Level" : 2,
 		"Total_Distance" : 529504,
 		"Exclusive_Distance" : 36617,
@@ -1950,7 +1950,7 @@
 		"Location_Unknown_Students" : 1169
 	},
 	{
-		"State" : MI,
+		"State" : "MI",
 		"Level" : 3,
 		"Total_Distance" : 470514,
 		"Exclusive_Distance" : 30903,
@@ -1963,7 +1963,7 @@
 		"Location_Unknown_Students" : 1027
 	},
 	{
-		"State" : MI,
+		"State" : "MI",
 		"Level" : 11,
 		"Total_Distance" : 47012,
 		"Exclusive_Distance" : 5714,
@@ -1976,7 +1976,7 @@
 		"Location_Unknown_Students" : 142
 	},
 	{
-		"State" : MI,
+		"State" : "MI",
 		"Level" : 12,
 		"Total_Distance" : 84425,
 		"Exclusive_Distance" : 14339,
@@ -1989,7 +1989,7 @@
 		"Location_Unknown_Students" : 280
 	},
 	{
-		"State" : MN,
+		"State" : "MN",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2002,7 +2002,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : MN,
+		"State" : "MN",
 		"Level" : 1,
 		"Total_Distance" : 430124,
 		"Exclusive_Distance" : 126149,
@@ -2015,7 +2015,7 @@
 		"Location_Unknown_Students" : 704
 	},
 	{
-		"State" : MN,
+		"State" : "MN",
 		"Level" : 2,
 		"Total_Distance" : 312566,
 		"Exclusive_Distance" : 47732,
@@ -2028,7 +2028,7 @@
 		"Location_Unknown_Students" : 316
 	},
 	{
-		"State" : MN,
+		"State" : "MN",
 		"Level" : 3,
 		"Total_Distance" : 260468,
 		"Exclusive_Distance" : 39531,
@@ -2041,7 +2041,7 @@
 		"Location_Unknown_Students" : 54
 	},
 	{
-		"State" : MN,
+		"State" : "MN",
 		"Level" : 11,
 		"Total_Distance" : 49922,
 		"Exclusive_Distance" : 8201,
@@ -2054,7 +2054,7 @@
 		"Location_Unknown_Students" : 262
 	},
 	{
-		"State" : MN,
+		"State" : "MN",
 		"Level" : 12,
 		"Total_Distance" : 117558,
 		"Exclusive_Distance" : 78417,
@@ -2067,7 +2067,7 @@
 		"Location_Unknown_Students" : 388
 	},
 	{
-		"State" : MO,
+		"State" : "MO",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2080,7 +2080,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : MO,
+		"State" : "MO",
 		"Level" : 1,
 		"Total_Distance" : 415019,
 		"Exclusive_Distance" : 54511,
@@ -2093,7 +2093,7 @@
 		"Location_Unknown_Students" : 507
 	},
 	{
-		"State" : MO,
+		"State" : "MO",
 		"Level" : 2,
 		"Total_Distance" : 336965,
 		"Exclusive_Distance" : 36865,
@@ -2106,7 +2106,7 @@
 		"Location_Unknown_Students" : 444
 	},
 	{
-		"State" : MO,
+		"State" : "MO",
 		"Level" : 3,
 		"Total_Distance" : 287696,
 		"Exclusive_Distance" : 32452,
@@ -2119,7 +2119,7 @@
 		"Location_Unknown_Students" : 430
 	},
 	{
-		"State" : MO,
+		"State" : "MO",
 		"Level" : 11,
 		"Total_Distance" : 45819,
 		"Exclusive_Distance" : 4413,
@@ -2132,7 +2132,7 @@
 		"Location_Unknown_Students" : 14
 	},
 	{
-		"State" : MO,
+		"State" : "MO",
 		"Level" : 12,
 		"Total_Distance" : 78054,
 		"Exclusive_Distance" : 17646,
@@ -2145,7 +2145,7 @@
 		"Location_Unknown_Students" : 63
 	},
 	{
-		"State" : MP,
+		"State" : "MP",
 		"Level" : 1,
 		"Total_Distance" : 1155,
 		"Exclusive_Distance" : 35,
@@ -2158,7 +2158,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : MP,
+		"State" : "MP",
 		"Level" : 2,
 		"Total_Distance" : 1155,
 		"Exclusive_Distance" : 35,
@@ -2171,7 +2171,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : MP,
+		"State" : "MP",
 		"Level" : 3,
 		"Total_Distance" : 1122,
 		"Exclusive_Distance" : 35,
@@ -2184,7 +2184,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : MP,
+		"State" : "MP",
 		"Level" : 11,
 		"Total_Distance" : 33,
 		"Exclusive_Distance" : 0,
@@ -2197,7 +2197,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : MS,
+		"State" : "MS",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2210,7 +2210,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : MS,
+		"State" : "MS",
 		"Level" : 1,
 		"Total_Distance" : 174000,
 		"Exclusive_Distance" : 20723,
@@ -2223,7 +2223,7 @@
 		"Location_Unknown_Students" : 26
 	},
 	{
-		"State" : MS,
+		"State" : "MS",
 		"Level" : 2,
 		"Total_Distance" : 153368,
 		"Exclusive_Distance" : 14937,
@@ -2236,7 +2236,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : MS,
+		"State" : "MS",
 		"Level" : 3,
 		"Total_Distance" : 142719,
 		"Exclusive_Distance" : 13843,
@@ -2249,7 +2249,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : MS,
+		"State" : "MS",
 		"Level" : 11,
 		"Total_Distance" : 8785,
 		"Exclusive_Distance" : 1094,
@@ -2262,7 +2262,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : MS,
+		"State" : "MS",
 		"Level" : 12,
 		"Total_Distance" : 20632,
 		"Exclusive_Distance" : 5786,
@@ -2275,7 +2275,7 @@
 		"Location_Unknown_Students" : 22
 	},
 	{
-		"State" : MT,
+		"State" : "MT",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2288,7 +2288,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : MT,
+		"State" : "MT",
 		"Level" : 1,
 		"Total_Distance" : 51250,
 		"Exclusive_Distance" : 3464,
@@ -2301,7 +2301,7 @@
 		"Location_Unknown_Students" : 142
 	},
 	{
-		"State" : MT,
+		"State" : "MT",
 		"Level" : 2,
 		"Total_Distance" : 46518,
 		"Exclusive_Distance" : 2694,
@@ -2314,7 +2314,7 @@
 		"Location_Unknown_Students" : 142
 	},
 	{
-		"State" : MT,
+		"State" : "MT",
 		"Level" : 3,
 		"Total_Distance" : 42477,
 		"Exclusive_Distance" : 2310,
@@ -2327,7 +2327,7 @@
 		"Location_Unknown_Students" : 78
 	},
 	{
-		"State" : MT,
+		"State" : "MT",
 		"Level" : 11,
 		"Total_Distance" : 3589,
 		"Exclusive_Distance" : 384,
@@ -2340,7 +2340,7 @@
 		"Location_Unknown_Students" : 64
 	},
 	{
-		"State" : MT,
+		"State" : "MT",
 		"Level" : 12,
 		"Total_Distance" : 4732,
 		"Exclusive_Distance" : 770,
@@ -2353,7 +2353,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : NC,
+		"State" : "NC",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2366,7 +2366,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : NC,
+		"State" : "NC",
 		"Level" : 1,
 		"Total_Distance" : 568759,
 		"Exclusive_Distance" : 81120,
@@ -2379,7 +2379,7 @@
 		"Location_Unknown_Students" : 358
 	},
 	{
-		"State" : NC,
+		"State" : "NC",
 		"Level" : 2,
 		"Total_Distance" : 496667,
 		"Exclusive_Distance" : 67005,
@@ -2392,7 +2392,7 @@
 		"Location_Unknown_Students" : 186
 	},
 	{
-		"State" : NC,
+		"State" : "NC",
 		"Level" : 3,
 		"Total_Distance" : 442967,
 		"Exclusive_Distance" : 54089,
@@ -2405,7 +2405,7 @@
 		"Location_Unknown_Students" : 72
 	},
 	{
-		"State" : NC,
+		"State" : "NC",
 		"Level" : 11,
 		"Total_Distance" : 47432,
 		"Exclusive_Distance" : 12871,
@@ -2418,7 +2418,7 @@
 		"Location_Unknown_Students" : 111
 	},
 	{
-		"State" : NC,
+		"State" : "NC",
 		"Level" : 12,
 		"Total_Distance" : 72092,
 		"Exclusive_Distance" : 14115,
@@ -2431,7 +2431,7 @@
 		"Location_Unknown_Students" : 172
 	},
 	{
-		"State" : ND,
+		"State" : "ND",
 		"Level" : 1,
 		"Total_Distance" : 54225,
 		"Exclusive_Distance" : 13096,
@@ -2444,7 +2444,7 @@
 		"Location_Unknown_Students" : 3
 	},
 	{
-		"State" : ND,
+		"State" : "ND",
 		"Level" : 2,
 		"Total_Distance" : 46959,
 		"Exclusive_Distance" : 10583,
@@ -2457,7 +2457,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : ND,
+		"State" : "ND",
 		"Level" : 3,
 		"Total_Distance" : 40092,
 		"Exclusive_Distance" : 5646,
@@ -2470,7 +2470,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : ND,
+		"State" : "ND",
 		"Level" : 11,
 		"Total_Distance" : 6482,
 		"Exclusive_Distance" : 4937,
@@ -2483,7 +2483,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : ND,
+		"State" : "ND",
 		"Level" : 12,
 		"Total_Distance" : 7266,
 		"Exclusive_Distance" : 2513,
@@ -2496,7 +2496,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : NE,
+		"State" : "NE",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2509,7 +2509,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : NE,
+		"State" : "NE",
 		"Level" : 1,
 		"Total_Distance" : 136962,
 		"Exclusive_Distance" : 26481,
@@ -2522,7 +2522,7 @@
 		"Location_Unknown_Students" : 47
 	},
 	{
-		"State" : NE,
+		"State" : "NE",
 		"Level" : 2,
 		"Total_Distance" : 111184,
 		"Exclusive_Distance" : 15753,
@@ -2535,7 +2535,7 @@
 		"Location_Unknown_Students" : 47
 	},
 	{
-		"State" : NE,
+		"State" : "NE",
 		"Level" : 3,
 		"Total_Distance" : 90060,
 		"Exclusive_Distance" : 11263,
@@ -2548,7 +2548,7 @@
 		"Location_Unknown_Students" : 16
 	},
 	{
-		"State" : NE,
+		"State" : "NE",
 		"Level" : 11,
 		"Total_Distance" : 20285,
 		"Exclusive_Distance" : 4490,
@@ -2561,7 +2561,7 @@
 		"Location_Unknown_Students" : 31
 	},
 	{
-		"State" : NE,
+		"State" : "NE",
 		"Level" : 12,
 		"Total_Distance" : 25778,
 		"Exclusive_Distance" : 10728,
@@ -2574,7 +2574,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : NH,
+		"State" : "NH",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2587,7 +2587,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : NH,
+		"State" : "NH",
 		"Level" : 1,
 		"Total_Distance" : 125194,
 		"Exclusive_Distance" : 60031,
@@ -2600,7 +2600,7 @@
 		"Location_Unknown_Students" : 132
 	},
 	{
-		"State" : NH,
+		"State" : "NH",
 		"Level" : 2,
 		"Total_Distance" : 98233,
 		"Exclusive_Distance" : 42843,
@@ -2613,7 +2613,7 @@
 		"Location_Unknown_Students" : 56
 	},
 	{
-		"State" : NH,
+		"State" : "NH",
 		"Level" : 3,
 		"Total_Distance" : 92272,
 		"Exclusive_Distance" : 42008,
@@ -2626,7 +2626,7 @@
 		"Location_Unknown_Students" : 56
 	},
 	{
-		"State" : NH,
+		"State" : "NH",
 		"Level" : 11,
 		"Total_Distance" : 4761,
 		"Exclusive_Distance" : 835,
@@ -2639,7 +2639,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : NH,
+		"State" : "NH",
 		"Level" : 12,
 		"Total_Distance" : 26961,
 		"Exclusive_Distance" : 17188,
@@ -2652,7 +2652,7 @@
 		"Location_Unknown_Students" : 76
 	},
 	{
-		"State" : NJ,
+		"State" : "NJ",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2665,7 +2665,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : NJ,
+		"State" : "NJ",
 		"Level" : 1,
 		"Total_Distance" : 442503,
 		"Exclusive_Distance" : 30362,
@@ -2678,7 +2678,7 @@
 		"Location_Unknown_Students" : 1236
 	},
 	{
-		"State" : NJ,
+		"State" : "NJ",
 		"Level" : 2,
 		"Total_Distance" : 378818,
 		"Exclusive_Distance" : 22997,
@@ -2691,7 +2691,7 @@
 		"Location_Unknown_Students" : 29
 	},
 	{
-		"State" : NJ,
+		"State" : "NJ",
 		"Level" : 3,
 		"Total_Distance" : 338461,
 		"Exclusive_Distance" : 21443,
@@ -2704,7 +2704,7 @@
 		"Location_Unknown_Students" : 29
 	},
 	{
-		"State" : NJ,
+		"State" : "NJ",
 		"Level" : 11,
 		"Total_Distance" : 22616,
 		"Exclusive_Distance" : 1545,
@@ -2717,7 +2717,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : NJ,
+		"State" : "NJ",
 		"Level" : 12,
 		"Total_Distance" : 63685,
 		"Exclusive_Distance" : 7365,
@@ -2730,7 +2730,7 @@
 		"Location_Unknown_Students" : 1207
 	},
 	{
-		"State" : NM,
+		"State" : "NM",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2743,7 +2743,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : NM,
+		"State" : "NM",
 		"Level" : 1,
 		"Total_Distance" : 139858,
 		"Exclusive_Distance" : 22384,
@@ -2756,7 +2756,7 @@
 		"Location_Unknown_Students" : 35
 	},
 	{
-		"State" : NM,
+		"State" : "NM",
 		"Level" : 2,
 		"Total_Distance" : 125996,
 		"Exclusive_Distance" : 18715,
@@ -2769,7 +2769,7 @@
 		"Location_Unknown_Students" : 13
 	},
 	{
-		"State" : NM,
+		"State" : "NM",
 		"Level" : 3,
 		"Total_Distance" : 100009,
 		"Exclusive_Distance" : 12661,
@@ -2782,7 +2782,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : NM,
+		"State" : "NM",
 		"Level" : 11,
 		"Total_Distance" : 24318,
 		"Exclusive_Distance" : 6054,
@@ -2795,7 +2795,7 @@
 		"Location_Unknown_Students" : 9
 	},
 	{
-		"State" : NM,
+		"State" : "NM",
 		"Level" : 12,
 		"Total_Distance" : 13862,
 		"Exclusive_Distance" : 3669,
@@ -2808,7 +2808,7 @@
 		"Location_Unknown_Students" : 22
 	},
 	{
-		"State" : NV,
+		"State" : "NV",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2821,7 +2821,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : NV,
+		"State" : "NV",
 		"Level" : 1,
 		"Total_Distance" : 119680,
 		"Exclusive_Distance" : 13360,
@@ -2834,7 +2834,7 @@
 		"Location_Unknown_Students" : 6
 	},
 	{
-		"State" : NV,
+		"State" : "NV",
 		"Level" : 2,
 		"Total_Distance" : 108424,
 		"Exclusive_Distance" : 12306,
@@ -2847,7 +2847,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : NV,
+		"State" : "NV",
 		"Level" : 3,
 		"Total_Distance" : 94657,
 		"Exclusive_Distance" : 9728,
@@ -2860,7 +2860,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : NV,
+		"State" : "NV",
 		"Level" : 11,
 		"Total_Distance" : 10184,
 		"Exclusive_Distance" : 2578,
@@ -2873,7 +2873,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : NV,
+		"State" : "NV",
 		"Level" : 12,
 		"Total_Distance" : 11256,
 		"Exclusive_Distance" : 1054,
@@ -2886,7 +2886,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : NY,
+		"State" : "NY",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2899,7 +2899,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : NY,
+		"State" : "NY",
 		"Level" : 1,
 		"Total_Distance" : 1317435,
 		"Exclusive_Distance" : 89089,
@@ -2912,7 +2912,7 @@
 		"Location_Unknown_Students" : 263
 	},
 	{
-		"State" : NY,
+		"State" : "NY",
 		"Level" : 2,
 		"Total_Distance" : 1079843,
 		"Exclusive_Distance" : 69935,
@@ -2925,7 +2925,7 @@
 		"Location_Unknown_Students" : 19
 	},
 	{
-		"State" : NY,
+		"State" : "NY",
 		"Level" : 3,
 		"Total_Distance" : 962593,
 		"Exclusive_Distance" : 65443,
@@ -2938,7 +2938,7 @@
 		"Location_Unknown_Students" : 5
 	},
 	{
-		"State" : NY,
+		"State" : "NY",
 		"Level" : 11,
 		"Total_Distance" : 94978,
 		"Exclusive_Distance" : 4492,
@@ -2951,7 +2951,7 @@
 		"Location_Unknown_Students" : 14
 	},
 	{
-		"State" : NY,
+		"State" : "NY",
 		"Level" : 12,
 		"Total_Distance" : 237592,
 		"Exclusive_Distance" : 19154,
@@ -2964,7 +2964,7 @@
 		"Location_Unknown_Students" : 244
 	},
 	{
-		"State" : OH,
+		"State" : "OH",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -2977,7 +2977,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : OH,
+		"State" : "OH",
 		"Level" : 1,
 		"Total_Distance" : 686957,
 		"Exclusive_Distance" : 76886,
@@ -2990,7 +2990,7 @@
 		"Location_Unknown_Students" : 85
 	},
 	{
-		"State" : OH,
+		"State" : "OH",
 		"Level" : 2,
 		"Total_Distance" : 595372,
 		"Exclusive_Distance" : 60053,
@@ -3003,7 +3003,7 @@
 		"Location_Unknown_Students" : 37
 	},
 	{
-		"State" : OH,
+		"State" : "OH",
 		"Level" : 3,
 		"Total_Distance" : 506173,
 		"Exclusive_Distance" : 49297,
@@ -3016,7 +3016,7 @@
 		"Location_Unknown_Students" : 28
 	},
 	{
-		"State" : OH,
+		"State" : "OH",
 		"Level" : 11,
 		"Total_Distance" : 79241,
 		"Exclusive_Distance" : 10756,
@@ -3029,7 +3029,7 @@
 		"Location_Unknown_Students" : 9
 	},
 	{
-		"State" : OH,
+		"State" : "OH",
 		"Level" : 12,
 		"Total_Distance" : 91585,
 		"Exclusive_Distance" : 16833,
@@ -3042,7 +3042,7 @@
 		"Location_Unknown_Students" : 48
 	},
 	{
-		"State" : OK,
+		"State" : "OK",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -3055,7 +3055,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : OK,
+		"State" : "OK",
 		"Level" : 1,
 		"Total_Distance" : 233977,
 		"Exclusive_Distance" : 25715,
@@ -3068,7 +3068,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : OK,
+		"State" : "OK",
 		"Level" : 2,
 		"Total_Distance" : 208405,
 		"Exclusive_Distance" : 20824,
@@ -3081,7 +3081,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : OK,
+		"State" : "OK",
 		"Level" : 3,
 		"Total_Distance" : 184587,
 		"Exclusive_Distance" : 17606,
@@ -3094,7 +3094,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : OK,
+		"State" : "OK",
 		"Level" : 11,
 		"Total_Distance" : 22528,
 		"Exclusive_Distance" : 3165,
@@ -3107,7 +3107,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : OK,
+		"State" : "OK",
 		"Level" : 12,
 		"Total_Distance" : 25572,
 		"Exclusive_Distance" : 4891,
@@ -3120,7 +3120,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : OR,
+		"State" : "OR",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -3133,7 +3133,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : OR,
+		"State" : "OR",
 		"Level" : 1,
 		"Total_Distance" : 243902,
 		"Exclusive_Distance" : 30321,
@@ -3146,7 +3146,7 @@
 		"Location_Unknown_Students" : 103
 	},
 	{
-		"State" : OR,
+		"State" : "OR",
 		"Level" : 2,
 		"Total_Distance" : 210120,
 		"Exclusive_Distance" : 21699,
@@ -3159,7 +3159,7 @@
 		"Location_Unknown_Students" : 23
 	},
 	{
-		"State" : OR,
+		"State" : "OR",
 		"Level" : 3,
 		"Total_Distance" : 187792,
 		"Exclusive_Distance" : 19126,
@@ -3172,7 +3172,7 @@
 		"Location_Unknown_Students" : 18
 	},
 	{
-		"State" : OR,
+		"State" : "OR",
 		"Level" : 11,
 		"Total_Distance" : 19469,
 		"Exclusive_Distance" : 2573,
@@ -3185,7 +3185,7 @@
 		"Location_Unknown_Students" : 5
 	},
 	{
-		"State" : OR,
+		"State" : "OR",
 		"Level" : 12,
 		"Total_Distance" : 33782,
 		"Exclusive_Distance" : 8622,
@@ -3198,7 +3198,7 @@
 		"Location_Unknown_Students" : 80
 	},
 	{
-		"State" : PA,
+		"State" : "PA",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -3211,7 +3211,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : PA,
+		"State" : "PA",
 		"Level" : 1,
 		"Total_Distance" : 771554,
 		"Exclusive_Distance" : 85186,
@@ -3224,7 +3224,7 @@
 		"Location_Unknown_Students" : 247
 	},
 	{
-		"State" : PA,
+		"State" : "PA",
 		"Level" : 2,
 		"Total_Distance" : 632997,
 		"Exclusive_Distance" : 56884,
@@ -3237,7 +3237,7 @@
 		"Location_Unknown_Students" : 131
 	},
 	{
-		"State" : PA,
+		"State" : "PA",
 		"Level" : 3,
 		"Total_Distance" : 594100,
 		"Exclusive_Distance" : 53942,
@@ -3250,7 +3250,7 @@
 		"Location_Unknown_Students" : 113
 	},
 	{
-		"State" : PA,
+		"State" : "PA",
 		"Level" : 11,
 		"Total_Distance" : 26257,
 		"Exclusive_Distance" : 2942,
@@ -3263,7 +3263,7 @@
 		"Location_Unknown_Students" : 18
 	},
 	{
-		"State" : PA,
+		"State" : "PA",
 		"Level" : 12,
 		"Total_Distance" : 138557,
 		"Exclusive_Distance" : 28302,
@@ -3276,7 +3276,7 @@
 		"Location_Unknown_Students" : 116
 	},
 	{
-		"State" : PR,
+		"State" : "PR",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -3289,7 +3289,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : PR,
+		"State" : "PR",
 		"Level" : 1,
 		"Total_Distance" : 251669,
 		"Exclusive_Distance" : 7920,
@@ -3302,7 +3302,7 @@
 		"Location_Unknown_Students" : 3
 	},
 	{
-		"State" : PR,
+		"State" : "PR",
 		"Level" : 2,
 		"Total_Distance" : 222796,
 		"Exclusive_Distance" : 6178,
@@ -3315,7 +3315,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : PR,
+		"State" : "PR",
 		"Level" : 3,
 		"Total_Distance" : 202202,
 		"Exclusive_Distance" : 6037,
@@ -3328,7 +3328,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : PR,
+		"State" : "PR",
 		"Level" : 11,
 		"Total_Distance" : 2491,
 		"Exclusive_Distance" : 141,
@@ -3341,7 +3341,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : PR,
+		"State" : "PR",
 		"Level" : 12,
 		"Total_Distance" : 28873,
 		"Exclusive_Distance" : 1742,
@@ -3354,7 +3354,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : PW,
+		"State" : "PW",
 		"Level" : 1,
 		"Total_Distance" : 627,
 		"Exclusive_Distance" : 0,
@@ -3367,7 +3367,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : PW,
+		"State" : "PW",
 		"Level" : 2,
 		"Total_Distance" : 627,
 		"Exclusive_Distance" : 0,
@@ -3380,7 +3380,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : PW,
+		"State" : "PW",
 		"Level" : 3,
 		"Total_Distance" : 619,
 		"Exclusive_Distance" : 0,
@@ -3393,7 +3393,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : PW,
+		"State" : "PW",
 		"Level" : 11,
 		"Total_Distance" : 8,
 		"Exclusive_Distance" : 0,
@@ -3406,7 +3406,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : RI,
+		"State" : "RI",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -3419,7 +3419,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : RI,
+		"State" : "RI",
 		"Level" : 1,
 		"Total_Distance" : 83946,
 		"Exclusive_Distance" : 1719,
@@ -3432,7 +3432,7 @@
 		"Location_Unknown_Students" : 3
 	},
 	{
-		"State" : RI,
+		"State" : "RI",
 		"Level" : 2,
 		"Total_Distance" : 73626,
 		"Exclusive_Distance" : 1165,
@@ -3445,7 +3445,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : RI,
+		"State" : "RI",
 		"Level" : 3,
 		"Total_Distance" : 69707,
 		"Exclusive_Distance" : 1099,
@@ -3458,7 +3458,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : RI,
+		"State" : "RI",
 		"Level" : 11,
 		"Total_Distance" : 2265,
 		"Exclusive_Distance" : 66,
@@ -3471,7 +3471,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : RI,
+		"State" : "RI",
 		"Level" : 12,
 		"Total_Distance" : 10320,
 		"Exclusive_Distance" : 554,
@@ -3484,7 +3484,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : SC,
+		"State" : "SC",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -3497,7 +3497,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : SC,
+		"State" : "SC",
 		"Level" : 1,
 		"Total_Distance" : 252491,
 		"Exclusive_Distance" : 22590,
@@ -3510,7 +3510,7 @@
 		"Location_Unknown_Students" : 6
 	},
 	{
-		"State" : SC,
+		"State" : "SC",
 		"Level" : 2,
 		"Total_Distance" : 226425,
 		"Exclusive_Distance" : 17556,
@@ -3523,7 +3523,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : SC,
+		"State" : "SC",
 		"Level" : 3,
 		"Total_Distance" : 208745,
 		"Exclusive_Distance" : 15830,
@@ -3536,7 +3536,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : SC,
+		"State" : "SC",
 		"Level" : 11,
 		"Total_Distance" : 15000,
 		"Exclusive_Distance" : 1726,
@@ -3549,7 +3549,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : SC,
+		"State" : "SC",
 		"Level" : 12,
 		"Total_Distance" : 26066,
 		"Exclusive_Distance" : 5034,
@@ -3562,7 +3562,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : SD,
+		"State" : "SD",
 		"Level" : 1,
 		"Total_Distance" : 54030,
 		"Exclusive_Distance" : 10710,
@@ -3575,7 +3575,7 @@
 		"Location_Unknown_Students" : 9
 	},
 	{
-		"State" : SD,
+		"State" : "SD",
 		"Level" : 2,
 		"Total_Distance" : 47267,
 		"Exclusive_Distance" : 8513,
@@ -3588,7 +3588,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : SD,
+		"State" : "SD",
 		"Level" : 3,
 		"Total_Distance" : 39525,
 		"Exclusive_Distance" : 4586,
@@ -3601,7 +3601,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : SD,
+		"State" : "SD",
 		"Level" : 11,
 		"Total_Distance" : 7376,
 		"Exclusive_Distance" : 3927,
@@ -3614,7 +3614,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : SD,
+		"State" : "SD",
 		"Level" : 12,
 		"Total_Distance" : 6763,
 		"Exclusive_Distance" : 2197,
@@ -3627,7 +3627,7 @@
 		"Location_Unknown_Students" : 8
 	},
 	{
-		"State" : TN,
+		"State" : "TN",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -3640,7 +3640,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : TN,
+		"State" : "TN",
 		"Level" : 1,
 		"Total_Distance" : 340265,
 		"Exclusive_Distance" : 29395,
@@ -3653,7 +3653,7 @@
 		"Location_Unknown_Students" : 519
 	},
 	{
-		"State" : TN,
+		"State" : "TN",
 		"Level" : 2,
 		"Total_Distance" : 293514,
 		"Exclusive_Distance" : 22026,
@@ -3666,7 +3666,7 @@
 		"Location_Unknown_Students" : 200
 	},
 	{
-		"State" : TN,
+		"State" : "TN",
 		"Level" : 3,
 		"Total_Distance" : 264945,
 		"Exclusive_Distance" : 18511,
@@ -3679,7 +3679,7 @@
 		"Location_Unknown_Students" : 199
 	},
 	{
-		"State" : TN,
+		"State" : "TN",
 		"Level" : 11,
 		"Total_Distance" : 24433,
 		"Exclusive_Distance" : 3515,
@@ -3692,7 +3692,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : TN,
+		"State" : "TN",
 		"Level" : 12,
 		"Total_Distance" : 46751,
 		"Exclusive_Distance" : 7369,
@@ -3705,7 +3705,7 @@
 		"Location_Unknown_Students" : 319
 	},
 	{
-		"State" : TX,
+		"State" : "TX",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -3718,7 +3718,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : TX,
+		"State" : "TX",
 		"Level" : 1,
 		"Total_Distance" : 1605417,
 		"Exclusive_Distance" : 189862,
@@ -3731,7 +3731,7 @@
 		"Location_Unknown_Students" : 523
 	},
 	{
-		"State" : TX,
+		"State" : "TX",
 		"Level" : 2,
 		"Total_Distance" : 1415124,
 		"Exclusive_Distance" : 148007,
@@ -3744,7 +3744,7 @@
 		"Location_Unknown_Students" : 455
 	},
 	{
-		"State" : TX,
+		"State" : "TX",
 		"Level" : 3,
 		"Total_Distance" : 1251981,
 		"Exclusive_Distance" : 133093,
@@ -3757,7 +3757,7 @@
 		"Location_Unknown_Students" : 282
 	},
 	{
-		"State" : TX,
+		"State" : "TX",
 		"Level" : 11,
 		"Total_Distance" : 132831,
 		"Exclusive_Distance" : 14738,
@@ -3770,7 +3770,7 @@
 		"Location_Unknown_Students" : 173
 	},
 	{
-		"State" : TX,
+		"State" : "TX",
 		"Level" : 12,
 		"Total_Distance" : 190293,
 		"Exclusive_Distance" : 41855,
@@ -3783,7 +3783,7 @@
 		"Location_Unknown_Students" : 68
 	},
 	{
-		"State" : UT,
+		"State" : "UT",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -3796,7 +3796,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : UT,
+		"State" : "UT",
 		"Level" : 1,
 		"Total_Distance" : 307743,
 		"Exclusive_Distance" : 95024,
@@ -3809,7 +3809,7 @@
 		"Location_Unknown_Students" : 88
 	},
 	{
-		"State" : UT,
+		"State" : "UT",
 		"Level" : 2,
 		"Total_Distance" : 273756,
 		"Exclusive_Distance" : 76942,
@@ -3822,7 +3822,7 @@
 		"Location_Unknown_Students" : 85
 	},
 	{
-		"State" : UT,
+		"State" : "UT",
 		"Level" : 3,
 		"Total_Distance" : 234526,
 		"Exclusive_Distance" : 74285,
@@ -3835,7 +3835,7 @@
 		"Location_Unknown_Students" : 84
 	},
 	{
-		"State" : UT,
+		"State" : "UT",
 		"Level" : 11,
 		"Total_Distance" : 36251,
 		"Exclusive_Distance" : 2657,
@@ -3848,7 +3848,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : UT,
+		"State" : "UT",
 		"Level" : 12,
 		"Total_Distance" : 33987,
 		"Exclusive_Distance" : 18082,
@@ -3861,7 +3861,7 @@
 		"Location_Unknown_Students" : 3
 	},
 	{
-		"State" : VA,
+		"State" : "VA",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -3874,7 +3874,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : VA,
+		"State" : "VA",
 		"Level" : 1,
 		"Total_Distance" : 573923,
 		"Exclusive_Distance" : 115576,
@@ -3887,7 +3887,7 @@
 		"Location_Unknown_Students" : 147
 	},
 	{
-		"State" : VA,
+		"State" : "VA",
 		"Level" : 2,
 		"Total_Distance" : 478656,
 		"Exclusive_Distance" : 75002,
@@ -3900,7 +3900,7 @@
 		"Location_Unknown_Students" : 14
 	},
 	{
-		"State" : VA,
+		"State" : "VA",
 		"Level" : 3,
 		"Total_Distance" : 422040,
 		"Exclusive_Distance" : 67991,
@@ -3913,7 +3913,7 @@
 		"Location_Unknown_Students" : 13
 	},
 	{
-		"State" : VA,
+		"State" : "VA",
 		"Level" : 11,
 		"Total_Distance" : 52941,
 		"Exclusive_Distance" : 7011,
@@ -3926,7 +3926,7 @@
 		"Location_Unknown_Students" : 1
 	},
 	{
-		"State" : VA,
+		"State" : "VA",
 		"Level" : 12,
 		"Total_Distance" : 95267,
 		"Exclusive_Distance" : 40574,
@@ -3939,7 +3939,7 @@
 		"Location_Unknown_Students" : 133
 	},
 	{
-		"State" : VI,
+		"State" : "VI",
 		"Level" : 1,
 		"Total_Distance" : 2321,
 		"Exclusive_Distance" : 15,
@@ -3952,7 +3952,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : VI,
+		"State" : "VI",
 		"Level" : 2,
 		"Total_Distance" : 2138,
 		"Exclusive_Distance" : 7,
@@ -3965,7 +3965,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : VI,
+		"State" : "VI",
 		"Level" : 3,
 		"Total_Distance" : 2022,
 		"Exclusive_Distance" : 6,
@@ -3978,7 +3978,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : VI,
+		"State" : "VI",
 		"Level" : 11,
 		"Total_Distance" : 116,
 		"Exclusive_Distance" : 1,
@@ -3991,7 +3991,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : VI,
+		"State" : "VI",
 		"Level" : 12,
 		"Total_Distance" : 183,
 		"Exclusive_Distance" : 8,
@@ -4004,7 +4004,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : VT,
+		"State" : "VT",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -4017,7 +4017,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : VT,
+		"State" : "VT",
 		"Level" : 1,
 		"Total_Distance" : 43924,
 		"Exclusive_Distance" : 5834,
@@ -4030,7 +4030,7 @@
 		"Location_Unknown_Students" : 137
 	},
 	{
-		"State" : VT,
+		"State" : "VT",
 		"Level" : 2,
 		"Total_Distance" : 37357,
 		"Exclusive_Distance" : 3493,
@@ -4043,7 +4043,7 @@
 		"Location_Unknown_Students" : 3
 	},
 	{
-		"State" : VT,
+		"State" : "VT",
 		"Level" : 3,
 		"Total_Distance" : 33403,
 		"Exclusive_Distance" : 2813,
@@ -4056,7 +4056,7 @@
 		"Location_Unknown_Students" : 3
 	},
 	{
-		"State" : VT,
+		"State" : "VT",
 		"Level" : 11,
 		"Total_Distance" : 3893,
 		"Exclusive_Distance" : 680,
@@ -4069,7 +4069,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : VT,
+		"State" : "VT",
 		"Level" : 12,
 		"Total_Distance" : 6567,
 		"Exclusive_Distance" : 2341,
@@ -4082,7 +4082,7 @@
 		"Location_Unknown_Students" : 134
 	},
 	{
-		"State" : WA,
+		"State" : "WA",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -4095,7 +4095,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : WA,
+		"State" : "WA",
 		"Level" : 1,
 		"Total_Distance" : 369405,
 		"Exclusive_Distance" : 32368,
@@ -4108,7 +4108,7 @@
 		"Location_Unknown_Students" : 221
 	},
 	{
-		"State" : WA,
+		"State" : "WA",
 		"Level" : 2,
 		"Total_Distance" : 332865,
 		"Exclusive_Distance" : 28233,
@@ -4121,7 +4121,7 @@
 		"Location_Unknown_Students" : 221
 	},
 	{
-		"State" : WA,
+		"State" : "WA",
 		"Level" : 3,
 		"Total_Distance" : 250173,
 		"Exclusive_Distance" : 20616,
@@ -4134,7 +4134,7 @@
 		"Location_Unknown_Students" : 39
 	},
 	{
-		"State" : WA,
+		"State" : "WA",
 		"Level" : 11,
 		"Total_Distance" : 78968,
 		"Exclusive_Distance" : 7617,
@@ -4147,7 +4147,7 @@
 		"Location_Unknown_Students" : 182
 	},
 	{
-		"State" : WA,
+		"State" : "WA",
 		"Level" : 12,
 		"Total_Distance" : 36540,
 		"Exclusive_Distance" : 4135,
@@ -4160,7 +4160,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : WI,
+		"State" : "WI",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -4173,7 +4173,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : WI,
+		"State" : "WI",
 		"Level" : 1,
 		"Total_Distance" : 352074,
 		"Exclusive_Distance" : 34174,
@@ -4186,7 +4186,7 @@
 		"Location_Unknown_Students" : 1731
 	},
 	{
-		"State" : WI,
+		"State" : "WI",
 		"Level" : 2,
 		"Total_Distance" : 312111,
 		"Exclusive_Distance" : 26489,
@@ -4199,7 +4199,7 @@
 		"Location_Unknown_Students" : 1696
 	},
 	{
-		"State" : WI,
+		"State" : "WI",
 		"Level" : 3,
 		"Total_Distance" : 269650,
 		"Exclusive_Distance" : 20651,
@@ -4212,7 +4212,7 @@
 		"Location_Unknown_Students" : 1105
 	},
 	{
-		"State" : WI,
+		"State" : "WI",
 		"Level" : 11,
 		"Total_Distance" : 40693,
 		"Exclusive_Distance" : 5838,
@@ -4225,7 +4225,7 @@
 		"Location_Unknown_Students" : 591
 	},
 	{
-		"State" : WI,
+		"State" : "WI",
 		"Level" : 12,
 		"Total_Distance" : 39963,
 		"Exclusive_Distance" : 7685,
@@ -4238,7 +4238,7 @@
 		"Location_Unknown_Students" : 35
 	},
 	{
-		"State" : WV,
+		"State" : "WV",
 		"Level" : null,
 		"Total_Distance" : null,
 		"Exclusive_Distance" : null,
@@ -4251,7 +4251,7 @@
 		"Location_Unknown_Students" : null
 	},
 	{
-		"State" : WV,
+		"State" : "WV",
 		"Level" : 1,
 		"Total_Distance" : 153262,
 		"Exclusive_Distance" : 62361,
@@ -4264,7 +4264,7 @@
 		"Location_Unknown_Students" : 117
 	},
 	{
-		"State" : WV,
+		"State" : "WV",
 		"Level" : 2,
 		"Total_Distance" : 130124,
 		"Exclusive_Distance" : 49876,
@@ -4277,7 +4277,7 @@
 		"Location_Unknown_Students" : 115
 	},
 	{
-		"State" : WV,
+		"State" : "WV",
 		"Level" : 3,
 		"Total_Distance" : 116016,
 		"Exclusive_Distance" : 46377,
@@ -4290,7 +4290,7 @@
 		"Location_Unknown_Students" : 76
 	},
 	{
-		"State" : WV,
+		"State" : "WV",
 		"Level" : 11,
 		"Total_Distance" : 13299,
 		"Exclusive_Distance" : 3499,
@@ -4303,7 +4303,7 @@
 		"Location_Unknown_Students" : 39
 	},
 	{
-		"State" : WV,
+		"State" : "WV",
 		"Level" : 12,
 		"Total_Distance" : 23138,
 		"Exclusive_Distance" : 12485,
@@ -4316,7 +4316,7 @@
 		"Location_Unknown_Students" : 2
 	},
 	{
-		"State" : WY,
+		"State" : "WY",
 		"Level" : 1,
 		"Total_Distance" : 34255,
 		"Exclusive_Distance" : 4130,
@@ -4329,7 +4329,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : WY,
+		"State" : "WY",
 		"Level" : 2,
 		"Total_Distance" : 31652,
 		"Exclusive_Distance" : 3603,
@@ -4342,7 +4342,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : WY,
+		"State" : "WY",
 		"Level" : 3,
 		"Total_Distance" : 23246,
 		"Exclusive_Distance" : 2550,
@@ -4355,7 +4355,7 @@
 		"Location_Unknown_Students" : 4
 	},
 	{
-		"State" : WY,
+		"State" : "WY",
 		"Level" : 11,
 		"Total_Distance" : 8356,
 		"Exclusive_Distance" : 1053,
@@ -4368,7 +4368,7 @@
 		"Location_Unknown_Students" : 0
 	},
 	{
-		"State" : WY,
+		"State" : "WY",
 		"Level" : 12,
 		"Total_Distance" : 2603,
 		"Exclusive_Distance" : 527,

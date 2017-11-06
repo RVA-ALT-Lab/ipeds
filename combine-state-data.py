@@ -19,5 +19,5 @@ for result in LISTING:
     for record in parsed_json:
         record['Year'] = file_name
         COMBINED_JSON.append(record)
-with open('national-summary.json', 'wb') as outfile:
+with open('state-summary.json', 'wb') as outfile:
     json.dump(COMBINED_JSON, outfile)
