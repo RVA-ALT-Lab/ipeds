@@ -1,6 +1,17 @@
 <template>
   <div class='hello'>
     <h1>{{ msg }}</h1>
+    <select v-model="yearFilter">
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+    </select>
+    <ul>
+      <li v-for="item in yearFilterList" :key="item.Year">
+        {{item.State}}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -13,22 +24,25 @@ export default {
   name: 'State',
   data () {
     return {
-      msg: 'State Summary'
+      msg: 'State Summary',
+      stateData: [],
+      yearFilter: '2012'
     }
   },
   computed: {
-    stateList: function () {
-      return this.$parent.records.filter(item => {
-        return !this.stateList.contains()
+    yearFilterList: function () {
+      return this.stateData.filter(record => {
+        return record['Year'] === this.yearFilter
       })
     }
   },
   created: function () {
   },
   update: function () {
+    this.stateData = this.$parent.stateData
   },
   mounted: function () {
-    console.log(this.stateList)
+    this.stateData = this.$parent.stateData
   },
   methods: {
     createChart: function () {

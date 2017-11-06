@@ -34,11 +34,9 @@ export default {
     }
   },
   mounted: function () {
-    console.log(this.nationalList)
     this.createChart()
   },
   updated: function () {
-    console.log(this.nationalList)
     this.createChart()
   },
   methods: {

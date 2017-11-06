@@ -31,12 +31,14 @@ export default {
     return {
       msg: 'National Summary',
       records: [],
-      nationalData: []
+      nationalData: [],
+      stateData: []
     }
   },
   created: function () {
     this.getSchoolData()
     this.getNationalData()
+    this.getStateData()
   },
   methods: {
     getSchoolData: function () {
@@ -44,7 +46,13 @@ export default {
       .then(response => response.json())
       .then(json => {
         this.records = json
-        console.log(this.records)
+      })
+    },
+    getStateData: function () {
+      fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/state-summary.json')
+      .then(response => response.json())
+      .then(json => {
+        this.stateData = json
       })
     },
     getNationalData: function () {
@@ -52,7 +60,6 @@ export default {
       .then(response => response.json())
       .then(json => {
         this.nationalData = json
-        console.log(this.nationalData)
       })
     }
   }
