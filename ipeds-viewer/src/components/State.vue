@@ -1,6 +1,13 @@
 <template>
   <div class='hello'>
     <h1>{{ msg }}</h1>
+    <select v-model="levelFilter">
+      <option value="1">All Enrollments</option>
+      <option value="2">Undergraduate</option>
+      <option value="3">Degree/certificate seeking</option>
+      <option value="11">Non-degree/certificate seeking</option>
+      <option value="12">Graduate</option>
+    </select>
     <select v-model="yearFilter">
       <option value="2012">2012</option>
       <option value="2013">2013</option>
@@ -8,16 +15,17 @@
       <option value="2015">2015</option>
     </select>
     <ul>
-      <li v-for="item in yearFilterList" :key="item.Year">
+      <li v-for="item in filteredList" :key="item.Year">
         {{item.State}}
       </li>
     </ul>
+    <div id="chartdiv"></div>
   </div>
 </template>
 
 <script>
 import 'amcharts3/amcharts/amcharts'
-import 'amcharts3/amcharts/serial'
+import 'amcharts3/amcharts/xy'
 import 'amcharts3/amcharts/themes/light'
 
 export default {
@@ -26,111 +34,66 @@ export default {
     return {
       msg: 'State Summary',
       stateData: [],
-      yearFilter: '2012'
+      yearFilter: '2012',
+      levelFilter: '1'
+
     }
   },
   computed: {
-    yearFilterList: function () {
-      return this.stateData.filter(record => {
+    filteredList: function () {
+      let filteredYearList = this.stateData.filter(record => {
         return record['Year'] === this.yearFilter
       })
+      let filteredLevelList = filteredYearList.filter(record => {
+        return record['Level'] === parseInt(this.levelFilter)
+      })
+      return filteredLevelList
     }
   },
   created: function () {
-  },
-  update: function () {
     this.stateData = this.$parent.stateData
+  },
+  updated: function () {
+    this.createChart()
   },
   mounted: function () {
-    this.stateData = this.$parent.stateData
+    this.createChart()
   },
   methods: {
     createChart: function () {
-      console.log(this.vcuList)
-      var chart = window.AmCharts.makeChart('chartdiv', {
-        'type': 'serial',
+      console.log(this.filteredList)
+      window.AmCharts.makeChart('chartdiv', {
+        'type': 'xy',
         'theme': 'light',
-        'marginRight': 40,
-        'marginLeft': 40,
-        'autoMarginOffset': 20,
-        'mouseWheelZoomEnabled': true,
-        'dataDateFormat': 'YYYY-MM-DD',
         'valueAxes': [{
-          'id': 'v1',
           'axisAlpha': 0,
-          'position': 'left',
-          'ignoreAxisWidth': true
+          'position': 'bottom'
+        }, {
+          'minMaxMultiplier': 1.2,
+          'axisAlpha': 0,
+          'position': 'left'
         }],
         'balloon': {
-          'borderThickness': 1,
-          'shadowAlpha': 0
+          'fixedPosition': true
         },
+        'startDuration': 1.5,
         'graphs': [{
-          'id': 'g1',
-          'balloon': {
-            'drop': true,
-            'adjustBorderColor': false,
-            'color': '#ffffff'
-          },
           'bullet': 'round',
-          'bulletBorderAlpha': 1,
-          'bulletColor': '#FFFFFF',
-          'bulletSize': 5,
-          'hideBulletsCount': 50,
-          'lineThickness': 2,
-          'title': 'red line',
-          'useLineColorForBulletBorder': true,
-          'valueField': 'Some_Distance',
-          'balloonText': '<span style="font-size:18px;">[[value]]</span>'
+          'bulletBorderAlpha': 0.2,
+          'bulletAlpha': 0.8,
+          'lineAlpha': 0,
+          'fillAlphas': 0,
+          'valueField': 'Exclusive_Distance',
+          'balloonText': '<span style="font-size:18px;">State: [[State]]</br>In-State Students: [[x]]</br>Out-of-State Students: [[y]]</br>Total Distance Students: [[value]]</br></span>',
+          'xField': 'InState_Students',
+          'yField': 'OutOfState_Students',
+          'maxBulletSize': 100
         }],
-        'chartScrollbar': {
-          'graph': 'g1',
-          'oppositeAxis': false,
-          'offset': 30,
-          'scrollbarHeight': 80,
-          'backgroundAlpha': 0,
-          'selectedBackgroundAlpha': 0.1,
-          'selectedBackgroundColor': '#888888',
-          'graphFillAlpha': 0,
-          'graphLineAlpha': 0.5,
-          'selectedGraphFillAlpha': 0,
-          'selectedGraphLineAlpha': 1,
-          'autoGridCount': true,
-          'color': '#AAAAAA'
-        },
-        'chartCursor': {
-          'pan': true,
-          'valueLineEnabled': true,
-          'valueLineBalloonEnabled': true,
-          'cursorAlpha': 1,
-          'cursorColor': '#258cbb',
-          'limitToGraph': 'g1',
-          'valueLineAlpha': 0.2,
-          'valueZoomable': true
-        },
-        'valueScrollbar': {
-          'oppositeAxis': false,
-          'offset': 50,
-          'scrollbarHeight': 10
-        },
-        'categoryField': 'Year',
-        'categoryAxis': {
-          'parseDates': true,
-          'dashLength': 1,
-          'minorGridEnabled': true
-        },
         'export': {
           'enabled': true
         },
-        'dataProvider': this.vcuList
+        'dataProvider': this.filteredList
       })
-      chart.addListener('rendered', zoomChart)
-
-      zoomChart()
-
-      function zoomChart () {
-        chart.zoomToIndexes(chart.dataProvider.length - 40, chart.dataProvider.length - 1)
-      }
     }
   }
 }
@@ -154,5 +117,9 @@ li {
 
 a {
   color: #42b983;
+}
+
+#chartdiv {
+  height: 500px;
 }
 </style>
