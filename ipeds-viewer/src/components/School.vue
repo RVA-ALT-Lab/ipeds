@@ -1,6 +1,11 @@
 <template>
   <div class='hello'>
     <h1>{{ msg }}</h1>
+    <ul>
+      <li v-for="item in $parent.records" :key="item.ID">
+        {{item.ID}}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -24,13 +29,6 @@ export default {
 
   },
   methods: {
-    getData: function () {
-      fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/combined-results.json')
-      .then(response => response.json())
-      .then(json => {
-        this.records = json
-      })
-    }
   }
 }
 </script>

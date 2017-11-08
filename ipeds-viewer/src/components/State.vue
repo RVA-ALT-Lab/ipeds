@@ -14,11 +14,6 @@
       <option value="2014">2014</option>
       <option value="2015">2015</option>
     </select>
-    <ul>
-      <li v-for="item in filteredList" :key="item.Year">
-        {{item.State}}
-      </li>
-    </ul>
     <div id="chartdiv"></div>
   </div>
 </template>
