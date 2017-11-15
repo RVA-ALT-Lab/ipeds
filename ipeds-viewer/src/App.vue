@@ -13,7 +13,7 @@
             <router-link to="/state">State</router-link>
           </li>
           <li>
-            <router-link to="/school">School</router-link>
+            <router-link to="/schools">School</router-link>
           </li>
         </ul>
       </nav>

@@ -1,11 +1,7 @@
 <template>
   <div class='hello'>
     <h1>{{ msg }}</h1>
-    <ul>
-      <li v-for="item in $parent.records" :key="item.ID">
-        {{item.ID}}
-      </li>
-    </ul>
+    <h2>{{$route.params.id}}</h2>
   </div>
 </template>
 
@@ -15,7 +11,7 @@ import 'amcharts3/amcharts/serial'
 import 'amcharts3/amcharts/themes/light'
 
 export default {
-  name: 'School',
+  name: 'individualSchool',
   data () {
     return {
       msg: 'Explore Schools'
