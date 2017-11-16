@@ -33,13 +33,15 @@ export default {
       schoolData: [],
       records: [],
       nationalData: [],
-      stateData: []
+      stateData: [],
+      transformedSchoolData: []
     }
   },
   created: function () {
     this.getSchoolData()
     this.getNationalData()
     this.getStateData()
+    this.getTransformedSchoolData()
   },
   methods: {
     getSchoolData: function () {
@@ -58,6 +60,13 @@ export default {
           }
         })
         this.schoolData = obj
+      })
+    },
+    getTransformedSchoolData: function () {
+      fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/transformed-results.json')
+      .then(response => response.json())
+      .then(json => {
+        this.transformedSchoolData = json
       })
     },
     getStateData: function () {

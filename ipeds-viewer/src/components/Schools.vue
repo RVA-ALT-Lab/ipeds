@@ -2,9 +2,9 @@
   <div class='hello'>
     <h1>{{ msg }}</h1>
     <table>
-      <tr v-for="(item, key) in schoolsList" :key="item.ID">
-        <td>{{item.Instiution_Name}}</td>
-        <td><router-link :to="{path:'/schools/' + key}">{{key}}</router-link></td>
+      <tr v-for="item in $parent.transformedSchoolData" :key="item.ID">
+        <td>{{item.Institution_Name}}</td>
+        <td><router-link :to="{path:'/schools/' + item.ID}">{{item.ID}}</router-link></td>
       </tr>
     </table>
   </div>
@@ -31,6 +31,9 @@ export default {
         arr.push(this.$parent.records[i])
       }
       return arr
+    },
+    transformedList: function () {
+
     }
   },
   created: function () {
