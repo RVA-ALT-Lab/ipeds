@@ -30,6 +30,7 @@ export default {
   data () {
     return {
       msg: 'National Summary',
+      schoolData: [],
       records: [],
       nationalData: [],
       stateData: []
@@ -46,6 +47,17 @@ export default {
       .then(response => response.json())
       .then(json => {
         this.records = json
+        let obj = {}
+        json.forEach(record => {
+          if (obj[record.ID]) {
+            obj[record.ID][record.Year] = record.Year
+          } else {
+            obj[record.ID] = {}
+            obj[record.ID][record.Year] = record.Year
+            obj[record.ID]['Instiution_Name'] = record.Instiution_Name
+          }
+        })
+        this.schoolData = obj
       })
     },
     getStateData: function () {
