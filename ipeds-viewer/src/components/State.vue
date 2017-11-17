@@ -1,19 +1,29 @@
 <template>
   <div class='hello'>
     <h1>{{ msg }}</h1>
-    <select v-model="levelFilter">
-      <option value="1">All Enrollments</option>
-      <option value="2">Undergraduate</option>
-      <option value="3">Degree/certificate seeking</option>
-      <option value="11">Non-degree/certificate seeking</option>
-      <option value="12">Graduate</option>
-    </select>
-    <select v-model="yearFilter">
-      <option value="2012">2012</option>
-      <option value="2013">2013</option>
-      <option value="2014">2014</option>
-      <option value="2015">2015</option>
-    </select>
+    <label>Enrollment Filter</label>
+    <div class="grid-container">
+      <div>
+        <select v-model="levelFilter">
+          <option value="1">All Enrollments</option>
+          <option value="2">Undergraduate</option>
+          <option value="3">Degree/certificate seeking</option>
+          <option value="11">Non-degree/certificate seeking</option>
+          <option value="12">Graduate</option>
+        </select>
+        <br>
+        <label>Year Filter</label>
+        <select v-model="yearFilter">
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+        </select>
+      </div>
+      <div class="half-width" v-if="annualFilteredStateData.length > 1">
+        <div id="linechart" style="height: 300px;"></div>
+      </div>
+    </div>
     <div id="chartdiv"></div>
   </div>
 </template>
@@ -30,7 +40,8 @@ export default {
       msg: 'State Summary',
       stateData: [],
       yearFilter: '2012',
-      levelFilter: '1'
+      levelFilter: '1',
+      selectedState: ''
 
     }
   },
@@ -43,6 +54,18 @@ export default {
         return record['Level'] === parseInt(this.levelFilter)
       })
       return filteredLevelList
+    },
+    selectedStateData: function () {
+      let filteredStateList = this.stateData.filter(record => {
+        return record['State'] === this.selectedState
+      })
+      return filteredStateList
+    },
+    annualFilteredStateData: function () {
+      let annualFilteredStateData = this.selectedStateData.filter(record => {
+        return record['Level'] === parseInt(this.levelFilter)
+      })
+      return annualFilteredStateData
     }
   },
   created: function () {
@@ -50,14 +73,17 @@ export default {
   },
   updated: function () {
     this.createChart()
+    this.createLineChart()
   },
   mounted: function () {
     this.createChart()
   },
   methods: {
+    selectState: function (e) {
+      this.selectedState = e.item.dataContext.State
+    },
     createChart: function () {
-      console.log(this.filteredList)
-      window.AmCharts.makeChart('chartdiv', {
+      let chart = window.AmCharts.makeChart('chartdiv', {
         'type': 'xy',
         'theme': 'light',
         'valueAxes': [{
@@ -89,6 +115,66 @@ export default {
         },
         'dataProvider': this.filteredList
       })
+      chart.addListener('clickGraphItem', this.selectState)
+    },
+    createLineChart: function () {
+      window.AmCharts.makeChart('linechart', {
+        'type': 'serial',
+        'theme': 'light',
+        'maginRight': 40,
+        'marginLeft': 40,
+        'autoMarginOffset': 20,
+        'dataDateFormat': 'YYYY',
+        'valueAxes': [{
+          'id': 'v1',
+          'axisAlpha': 0,
+          'position': 'left',
+          'ignoreAxisWidth': true
+        }],
+        'balloon': {
+          'borderThickness': 1,
+          'shadowAlpha': 0
+        },
+        'graphs': [{
+          'id': 'g1',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'bullet': 'round',
+          'bulletBorderAlpha': 1,
+          'bulletColor': '#FFFFFF',
+          'bulletSize': 5,
+          'useLineColorForBulletBorder': true,
+          'valueField': 'Exclusive_Distance'
+        },
+        {
+          'id': 'g2',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'bullet': 'round',
+          'bulletBorderAlpha': 1,
+          'bulletColor': '#FFFFFF',
+          'bulletSize': 5,
+          'useLineColorForBulletBorder': true,
+          'valueField': 'Some_Distance'
+        }
+        ],
+        'categoryField': 'Year',
+        'categoryAxis': {
+          'parseDates': true,
+          'dashLength': 1,
+          'minorGridEnabled': true
+        },
+        'export': {
+          'enabled': true
+        },
+        'dataProvider': this.annualFilteredStateData
+      })
     }
   }
 }
@@ -96,22 +182,15 @@ export default {
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+.three-col-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #chartdiv {

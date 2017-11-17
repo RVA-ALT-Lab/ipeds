@@ -2,7 +2,7 @@
   <div class='hello'>
     <h1>{{ msg }}</h1>
     <table>
-      <tr v-for="item in $parent.transformedSchoolData" :key="item.ID">
+      <tr v-for="item in schoolsList" :key="item.ID">
         <td>{{item.Institution_Name}}</td>
         <td><router-link :to="{path:'/schools/' + item.ID}">{{item.ID}}</router-link></td>
       </tr>
@@ -28,7 +28,7 @@ export default {
     schoolsList: function () {
       let arr = []
       for (let i = 0; i < 50; i++) {
-        arr.push(this.$parent.records[i])
+        arr.push(this.$parent.transformedSchoolData[i])
       }
       return arr
     },

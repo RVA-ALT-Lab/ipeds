@@ -4,13 +4,13 @@
     <h2>{{$route.params.id}}</h2>
   </div>
 </template>
-
 <script>
 import 'amcharts3/amcharts/amcharts'
 import 'amcharts3/amcharts/serial'
 import 'amcharts3/amcharts/themes/light'
 
 export default {
+
   name: 'individualSchool',
   data () {
     return {
@@ -29,6 +29,6 @@ export default {
 }
 </script>
 
-<!-- Add 'scoped' attribute to limit CSS to this component only -->
+ <!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style scoped>
 </style>
