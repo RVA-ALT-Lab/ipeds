@@ -161,6 +161,34 @@ export default {
           'bulletColor': '#FFFFFF',
           'bulletSize': 5,
           'useLineColorForBulletBorder': true,
+          'valueField': 'InState_Students'
+        },
+        {
+          'id': 'g3',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'bullet': 'round',
+          'bulletBorderAlpha': 1,
+          'bulletColor': '#FFFFFF',
+          'bulletSize': 5,
+          'useLineColorForBulletBorder': true,
+          'valueField': 'OutOfState_Students'
+        },
+        {
+          'id': 'g4',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'bullet': 'round',
+          'bulletBorderAlpha': 1,
+          'bulletColor': '#FFFFFF',
+          'bulletSize': 5,
+          'useLineColorForBulletBorder': true,
           'valueField': 'Some_Distance'
         }
         ],
