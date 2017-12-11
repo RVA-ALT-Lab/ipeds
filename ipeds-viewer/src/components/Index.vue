@@ -61,7 +61,6 @@
         <td>Some Distance</td>
         <td>None Distance</td>
         <td>Total Enrollments</td>
-        <td>Addition</td>
       </thead>
       <tr v-for="item in results2012" :key="item.Year">
       <td>{{item.Level | returnLevel}}</td>
@@ -69,7 +68,6 @@
       <td>{{item.Some_Distance}}</td>
       <td>{{item.None_Distance}}</td>
       <td>{{item.Total_Distance}}</td>
-      <td>{{item.Exclusive_Distance + item.Some_Distance + item.None_Distance  }}</td>
       </tr>
     </table>
 
