@@ -1,0 +1,37 @@
+[
+	{
+		"Total_Distance" : 20525775,
+		"Some_Distance" : 3359691,
+		"Exclusive_Distance" : 3006722,
+		"None_Distance" : 14159362,
+		"Level" : 1
+	},
+	{
+		"Total_Distance" : 17507701,
+		"Some_Distance" : 3080775,
+		"Exclusive_Distance" : 2179014,
+		"None_Distance" : 12247912,
+		"Level" : 2
+	},
+	{
+		"Total_Distance" : 15383798,
+		"Some_Distance" : 2948447,
+		"Exclusive_Distance" : 1923425,
+		"None_Distance" : 10511926,
+		"Level" : 3
+	},
+	{
+		"Total_Distance" : 1837129,
+		"Some_Distance" : 129013,
+		"Exclusive_Distance" : 254148,
+		"None_Distance" : 1453968,
+		"Level" : 11
+	},
+	{
+		"Total_Distance" : 3018074,
+		"Some_Distance" : 278916,
+		"Exclusive_Distance" : 827708,
+		"None_Distance" : 1911450,
+		"Level" : 12
+	}
+]

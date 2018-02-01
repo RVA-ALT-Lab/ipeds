@@ -1,6 +1,8 @@
 <template>
   <div class='hello'>
     <h1>{{ msg }}</h1>
+    <input type="text" v-model="searchText">
+    <button type="button" v-on:click="nextPage">Next Page</button>
     <table>
       <tr v-for="item in schoolsList" :key="item.ID">
         <td>{{item.Institution_Name}}</td>
@@ -21,13 +23,14 @@ export default {
     return {
       msg: 'Explore Schools',
       numRows: 10,
-      rowOffset: 0
+      rowOffset: 0,
+      searchText: ''
     }
   },
   computed: {
     schoolsList: function () {
       let arr = []
-      for (let i = 0; i < 50; i++) {
+      for (let i = this.rowOffset * 50; i < (this.rowOffset * 50 + 50); i++) {
         arr.push(this.$parent.transformedSchoolData[i])
       }
       return arr
@@ -42,6 +45,9 @@ export default {
 
   },
   methods: {
+    nextPage: function () {
+      this.rowOffset++
+    }
   }
 }
 </script>
