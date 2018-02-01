@@ -22,6 +22,7 @@
       </div>
       <div class="half-width" v-if="annualFilteredStateData.length > 1">
         <h3>{{selectedState}} Details</h3>
+        <router-link :to="{path:'/state/' + selectedState}">View Details</router-link>
         <div id="linechart" style="height: 300px;"></div>
       </div>
     </div>

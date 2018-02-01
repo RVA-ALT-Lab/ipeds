@@ -5,6 +5,7 @@ import National from '@/components/National'
 import State from '@/components/State'
 import Schools from '@/components/Schools'
 import individualSchool from '@/components/individualSchool'
+import individualState from '@/components/individualState'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/state',
       name: 'State',
       component: State
+    },
+    {
+      path: '/state/:id',
+      name: 'State',
+      component: individualState
     },
     {
       path: '/schools',
