@@ -87,7 +87,7 @@ export default {
           'color': '#000',
           'valueField': 'None_Distance'
         }],
-        'rotate': true,
+        // 'rotate': true,
         'categoryField': 'Year',
         'categoryAxis': {
           'gridPosition': 'start',

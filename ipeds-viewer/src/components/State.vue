@@ -21,6 +21,7 @@
         </select>
       </div>
       <div class="half-width" v-if="annualFilteredStateData.length > 1">
+        <h3>{{selectedState}} Details</h3>
         <div id="linechart" style="height: 300px;"></div>
       </div>
     </div>
@@ -81,18 +82,22 @@ export default {
   methods: {
     selectState: function (e) {
       this.selectedState = e.item.dataContext.State
+      console.log(e.item.dataContext)
     },
     createChart: function () {
       let chart = window.AmCharts.makeChart('chartdiv', {
         'type': 'xy',
         'theme': 'light',
+        'maginRight': 50,
+        'marginLeft': 50,
         'valueAxes': [{
           'axisAlpha': 0,
-          'position': 'bottom'
+          'position': 'bottom',
+          'title': 'In-State Students'
         }, {
-          'minMaxMultiplier': 1.2,
           'axisAlpha': 0,
-          'position': 'left'
+          'position': 'left',
+          'title': 'Out of State Students'
         }],
         'balloon': {
           'fixedPosition': true
@@ -121,15 +126,23 @@ export default {
       window.AmCharts.makeChart('linechart', {
         'type': 'serial',
         'theme': 'light',
-        'maginRight': 40,
-        'marginLeft': 40,
+        'maginRight': 300,
+        'marginLeft': 100,
         'autoMarginOffset': 20,
         'dataDateFormat': 'YYYY',
+        'legend': {
+          'horizontalGap': 10,
+          'maxColumns': 1,
+          'position': 'right',
+          'useGraphSettings': true,
+          'markerSize': 10
+        },
         'valueAxes': [{
           'id': 'v1',
           'axisAlpha': 0,
           'position': 'left',
-          'ignoreAxisWidth': true
+          'ignoreAxisWidth': true,
+          'title': 'Enrollments'
         }],
         'balloon': {
           'borderThickness': 1,
@@ -145,56 +158,54 @@ export default {
           'bullet': 'round',
           'bulletBorderAlpha': 1,
           'bulletColor': '#FFFFFF',
-          'bulletSize': 5,
-          'useLineColorForBulletBorder': true,
-          'valueField': 'Exclusive_Distance'
-        },
-        {
-          'id': 'g2',
-          'balloon': {
-            'drop': true,
-            'adjustBorderColor': false,
-            'color': '#ffffff'
-          },
-          'bullet': 'round',
-          'bulletBorderAlpha': 1,
-          'bulletColor': '#FFFFFF',
-          'bulletSize': 5,
-          'useLineColorForBulletBorder': true,
-          'valueField': 'InState_Students'
-        },
-        {
-          'id': 'g3',
-          'balloon': {
-            'drop': true,
-            'adjustBorderColor': false,
-            'color': '#ffffff'
-          },
-          'bullet': 'round',
-          'bulletBorderAlpha': 1,
-          'bulletColor': '#FFFFFF',
-          'bulletSize': 5,
-          'useLineColorForBulletBorder': true,
-          'valueField': 'OutOfState_Students'
-        },
-        {
-          'id': 'g4',
-          'balloon': {
-            'drop': true,
-            'adjustBorderColor': false,
-            'color': '#ffffff'
-          },
-          'bullet': 'round',
-          'bulletBorderAlpha': 1,
-          'bulletColor': '#FFFFFF',
+          'title': 'Some Distance',
           'bulletSize': 5,
           'useLineColorForBulletBorder': true,
           'valueField': 'Some_Distance'
+        },
+        {
+          'id': 'g5',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'type': 'column',
+          'color': '#000000',
+          'fillAlphas': 1,
+          'title': 'In State Students',
+          'valueField': 'InState_Students'
+        },
+        {
+          'id': 'g6',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'type': 'column',
+          'fillAlphas': 1,
+          'color': '#000000',
+          'title': 'Out of State Students',
+          'valueField': 'OutOfState_Students'
+        },
+        {
+          'id': 'g7',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'type': 'column',
+          'color': '#000000',
+          'fillAlphas': 1,
+          'title': 'International Students',
+          'valueField': 'International_Students'
         }
         ],
         'categoryField': 'Year',
         'categoryAxis': {
-          'parseDates': true,
+          // 'parseDates': true,
           'dashLength': 1,
           'minorGridEnabled': true
         },
@@ -213,7 +224,7 @@ export default {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: .5fr 2.5fr;
 }
 
 .three-col-layout {
