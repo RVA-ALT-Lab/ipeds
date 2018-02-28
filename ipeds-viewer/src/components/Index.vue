@@ -1,74 +1,110 @@
 <template>
   <div class='hello'>
     <h1>{{ msg }}</h1>
-    <h2>2015</h2>
-    <p>2015 is the most recent year for which we have data about distance education enrollments. A revised version of this data set has not been published.</p>
-    <table>
-      <thead>
-        <td>Level</td>
-        <td>Exclusively Distance</td>
-        <td>Some Distance</td>
-        <td>None Distance</td>
-        <td>Total Enrollments</td>
+    <h2>2016</h2>
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Level</th>
+          <th>Exclusively Distance</th>
+          <th>Some Distance</th>
+          <th>None Distance</th>
+          <th>Total Enrollments</th>
+        </tr>
       </thead>
-      <tr v-for="item in results2015" :key="item.Year">
-      <td>{{item.Level | returnLevel}}</td>
-      <td>{{item.Exclusive_Distance}}</td>
-      <td>{{item.Some_Distance}}</td>
-      <td>{{item.None_Distance}}</td>
-      <td>{{item.Total_Distance}}</td>
-      </tr>
+      <tbody>
+        <tr v-for="item in results2016" :key="item.Year">
+        <td>{{item.Level | returnLevel}}</td>
+        <td>{{item.Exclusive_Distance}}</td>
+        <td>{{item.Some_Distance}}</td>
+        <td>{{item.None_Distance}}</td>
+        <td>{{item.Total_Distance}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>2015</h2>
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Level</th>
+          <th>Exclusively Distance</th>
+          <th>Some Distance</th>
+          <th>None Distance</th>
+          <th>Total Enrollments</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="item in results2015" :key="item.Year">
+        <td>{{item.Level | returnLevel}}</td>
+        <td>{{item.Exclusive_Distance}}</td>
+        <td>{{item.Some_Distance}}</td>
+        <td>{{item.None_Distance}}</td>
+        <td>{{item.Total_Distance}}</td>
+        </tr>
+      </tbody>
     </table>
     <h2>2014</h2>
-    <table>
-      <thead>
-        <td>Level</td>
-        <td>Exclusively Distance</td>
-        <td>Some Distance</td>
-        <td>None Distance</td>
-        <td>Total Enrollments</td>
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Level</th>
+          <th>Exclusively Distance</th>
+          <th>Some Distance</th>
+          <th>None Distance</th>
+          <th>Total Enrollments</th>
+        </tr>
       </thead>
-      <tr v-for="item in results2014" :key="item.Year">
-      <td>{{item.Level | returnLevel}}</td>
-      <td>{{item.Exclusive_Distance}}</td>
-      <td>{{item.Some_Distance}}</td>
-      <td>{{item.None_Distance}}</td>
-      <td>{{item.Total_Distance}}</td>
-      </tr>
+      <tbody>
+        <tr v-for="item in results2014" :key="item.Year">
+        <td>{{item.Level | returnLevel}}</td>
+        <td>{{item.Exclusive_Distance}}</td>
+        <td>{{item.Some_Distance}}</td>
+        <td>{{item.None_Distance}}</td>
+        <td>{{item.Total_Distance}}</td>
+        </tr>
+      </tbody>
     </table>
     <h2>2013</h2>
-    <table>
-      <thead>
-        <td>Level</td>
-        <td>Exclusively Distance</td>
-        <td>Some Distance</td>
-        <td>None Distance</td>
-        <td>Total Enrollments</td>
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Level</th>
+          <th>Exclusively Distance</th>
+          <th>Some Distance</th>
+          <th>None Distance</th>
+          <th>Total Enrollments</th>
+        </tr>
       </thead>
-      <tr v-for="item in results2013" :key="item.Year">
-      <td>{{item.Level | returnLevel}}</td>
-      <td>{{item.Exclusive_Distance}}</td>
-      <td>{{item.Some_Distance}}</td>
-      <td>{{item.None_Distance}}</td>
-      <td>{{item.Total_Distance}}</td>
-      </tr>
+      <tbody>
+        <tr v-for="item in results2013" :key="item.Year">
+        <td>{{item.Level | returnLevel}}</td>
+        <td>{{item.Exclusive_Distance}}</td>
+        <td>{{item.Some_Distance}}</td>
+        <td>{{item.None_Distance}}</td>
+        <td>{{item.Total_Distance}}</td>
+        </tr>
+      </tbody>
     </table>
     <h2>2012</h2>
-    <table>
-      <thead>
-        <td>Level</td>
-        <td>Exclusively Distance</td>
-        <td>Some Distance</td>
-        <td>None Distance</td>
-        <td>Total Enrollments</td>
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Level</th>
+          <th>Exclusively Distance</th>
+          <th>Some Distance</th>
+          <th>None Distance</th>
+          <th>Total Enrollments</th>
+        </tr>
       </thead>
-      <tr v-for="item in results2012" :key="item.Year">
-      <td>{{item.Level | returnLevel}}</td>
-      <td>{{item.Exclusive_Distance}}</td>
-      <td>{{item.Some_Distance}}</td>
-      <td>{{item.None_Distance}}</td>
-      <td>{{item.Total_Distance}}</td>
-      </tr>
+      <tbody>
+        <tr v-for="item in results2012" :key="item.Year">
+        <td>{{item.Level | returnLevel}}</td>
+        <td>{{item.Exclusive_Distance}}</td>
+        <td>{{item.Some_Distance}}</td>
+        <td>{{item.None_Distance}}</td>
+        <td>{{item.Total_Distance}}</td>
+        </tr>
+      </tbody>
     </table>
 
   </div>
@@ -87,6 +123,11 @@ export default {
     }
   },
   computed: {
+    results2016: function () {
+      return this.$parent.nationalData.filter(item => {
+        return item.Year === '2016'
+      })
+    },
     results2015: function () {
       return this.$parent.nationalData.filter(item => {
         return item.Year === '2015'

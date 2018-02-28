@@ -14,7 +14,8 @@ export default {
   name: 'individualSchool',
   data () {
     return {
-      msg: 'Explore Schools'
+      msg: 'Explore Schools',
+      data: []
     }
   },
   computed: {

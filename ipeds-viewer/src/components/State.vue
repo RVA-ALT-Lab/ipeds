@@ -1,32 +1,40 @@
 <template>
-  <div class='hello'>
-    <h1>{{ msg }}</h1>
-    <label>Enrollment Filter</label>
-    <div class="grid-container">
-      <div>
-        <select v-model="levelFilter">
-          <option value="1">All Enrollments</option>
-          <option value="2">Undergraduate</option>
-          <option value="3">Degree/certificate seeking</option>
-          <option value="11">Non-degree/certificate seeking</option>
-          <option value="12">Graduate</option>
-        </select>
-        <br>
-        <label>Year Filter</label>
-        <select v-model="yearFilter">
-          <option value="2012">2012</option>
-          <option value="2013">2013</option>
-          <option value="2014">2014</option>
-          <option value="2015">2015</option>
-        </select>
+  <div class='container'>
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>{{ msg }}</h1>
       </div>
-      <div class="half-width" v-if="annualFilteredStateData.length > 1">
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label>Enrollment Filter</label>
+          <select v-model="levelFilter" class="form-control">
+            <option value="1">All Enrollments</option>
+            <option value="2">Undergraduate</option>
+            <option value="3">Degree/certificate seeking</option>
+            <option value="11">Non-degree/certificate seeking</option>
+            <option value="12">Graduate</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Year Filter</label>
+          <select v-model="yearFilter" class="form-control">
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-8" v-if="annualFilteredStateData.length > 1">
         <h3>{{selectedState}} Details</h3>
         <router-link :to="{path:'/state/' + selectedState}">View Details</router-link>
-        <div id="linechart" style="height: 300px;"></div>
+        <div id="linechart" style="height: 200px;"></div>
+      </div>
+      <div class="col-lg-12">
+        <div id="chartdiv"></div>
       </div>
     </div>
-    <div id="chartdiv"></div>
   </div>
 </template>
 
@@ -41,7 +49,7 @@ export default {
     return {
       msg: 'State Summary',
       stateData: [],
-      yearFilter: '2012',
+      yearFilter: '2016',
       levelFilter: '1',
       selectedState: ''
 
@@ -111,7 +119,7 @@ export default {
           'lineAlpha': 0,
           'fillAlphas': 0,
           'valueField': 'Exclusive_Distance',
-          'balloonText': '<span style="font-size:18px;">State: [[State]]</br>In-State Students: [[x]]</br>Out-of-State Students: [[y]]</br>Total Distance Students: [[value]]</br></span>',
+          'balloonText': '<span style="font-size:18px;">State: [[State]]</br>In-State: [[x]]</br>Out-of-State: [[y]]</br>Total Distance: [[value]]</br></span>',
           'xField': 'InState_Students',
           'yField': 'OutOfState_Students',
           'maxBulletSize': 100
@@ -234,6 +242,6 @@ export default {
 }
 
 #chartdiv {
-  height: 500px;
+  height: 400px;
 }
 </style>
