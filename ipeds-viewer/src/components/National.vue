@@ -1,15 +1,22 @@
 <template>
-  <div class='hello'>
-    <h1>{{ msg }}</h1>
-    <p>These statistics should help you compare national trends in distance education enrollments. You can filter by level using the dropdown menu.</p>
-    <select v-model="levelFilter">
-      <option value="1">All Enrollments</option>
-      <option value="2">Undergraduate</option>
-      <option value="3">Degree/certificate seeking</option>
-      <option value="11">Non-degree/certificate seeking</option>
-      <option value="12">Graduate</option>
-    </select>
-    <div id="chart-div"></div>
+  <div class='container'>
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>{{ msg }}</h1>
+        <p>These statistics should help you compare national trends in distance education enrollments. You can filter by level using the dropdown menu.</p>
+        <div class="form-group">
+          <select v-model="levelFilter" class="form-control">
+            <option value="1">All Enrollments</option>
+            <option value="2">Undergraduate</option>
+            <option value="3">Degree/certificate seeking</option>
+            <option value="11">Non-degree/certificate seeking</option>
+            <option value="12">Graduate</option>
+          </select>
+        </div>
+        <div id="chart-div"></div>
+      </div>
+
+    </div>
   </div>
 </template>
 

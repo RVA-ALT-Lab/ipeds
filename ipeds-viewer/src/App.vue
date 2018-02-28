@@ -42,7 +42,8 @@ export default {
       records: [],
       nationalData: [],
       stateData: [],
-      transformedSchoolData: []
+      transformedSchoolData: [],
+      schoolCharacteristics: []
     }
   },
   created: function () {
@@ -50,8 +51,16 @@ export default {
     this.getNationalData()
     this.getStateData()
     this.getTransformedSchoolData()
+    this.getSchoolCharacteristics()
   },
   methods: {
+    getSchoolCharacteristics: function () {
+      fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/Institutional_Characteristics2015.json')
+      .then(response => response.json())
+      .then(json => {
+        this.schoolCharacteristics = json
+      })
+    },
     getSchoolData: function () {
       fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/combined-results.json')
       .then(response => response.json())
