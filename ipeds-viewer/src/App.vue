@@ -43,7 +43,8 @@ export default {
       nationalData: [],
       stateData: [],
       transformedSchoolData: [],
-      schoolCharacteristics: []
+      schoolCharacteristics: [],
+      NCSARAData: []
     }
   },
   created: function () {
@@ -52,6 +53,7 @@ export default {
     this.getStateData()
     this.getTransformedSchoolData()
     this.getSchoolCharacteristics()
+    this.getNCSARAData()
   },
   methods: {
     getSchoolCharacteristics: function () {
@@ -59,6 +61,13 @@ export default {
       .then(response => response.json())
       .then(json => {
         this.schoolCharacteristics = json
+      })
+    },
+    getNCSARAData: function () {
+      fetch('https://raw.githubusercontent.com/RVA-ALT-Lab/ipeds/master/NCSARA/NCSARA20162017.json')
+      .then(response => response.json())
+      .then(json => {
+        this.NCSARAData = json
       })
     },
     getSchoolData: function () {
