@@ -253,7 +253,12 @@ export default {
     },
     computedMapDataProvider () {
       let ncSaraList = this.ncSaraList
+      console.log(this.mapDataProvider)
       let computedMapDataProvider = this.mapDataProvider.map(item => item)
+      computedMapDataProvider.forEach(item => {
+        item.value = 0
+      })
+      console.log(computedMapDataProvider)
 
       if (this.NCSARAfilter === 'internal') {
         ncSaraList.forEach(stateEntry => {
