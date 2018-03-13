@@ -16,34 +16,23 @@
             <option value='12'>Graduate</option>
           </select>
         </div>
-        <div class='form-group'>
-          <label>Year Filter</label>
-          <select v-model='yearFilter' class='form-control'>
-            <option value='2012'>2012</option>
-            <option value='2013'>2013</option>
-            <option value='2014'>2014</option>
-            <option value='2015'>2015</option>
-            <option value='2016'>2016</option>
-          </select>
-        </div>
       </div>
       <div class='col-lg-8'>
-
+        <div id='linechart'></div>
       </div>
       <div class='col-lg-12'>
         <h3>NC SARA Data</h3>
         <div class='form-group'>
           <label>Enrollment Filter</label>
           <select v-model='NCSARAfilter' class='form-control'>
-            <option value='internal'>Where 'state' institutions enroll students</option>
-            <option value='external'>Where 'state' students are enrolled in distance programs</option>
+            <option value='internal'>Where {{$route.params.id}} institutions enroll students</option>
+            <option value='external'>Where {{$route.params.id}} students are enrolled in distance programs</option>
           </select>
         </div>
         <div id='map' style='height: 500px;'></div>
 
       </div>
     <div class='col-lg-12'>
-       {{filteredList}}
       <h3>Individual Schools</h3>
       <table class='table table-striped'>
         <thead>
@@ -84,7 +73,159 @@ export default {
       yearFilter: '2016',
       levelFilter: '1',
       NCSARAdata: [],
-      NCSARAfilter: 'internal'
+      NCSARAfilter: 'internal',
+      mapDataProvider: [
+        {
+          'id': 'US-AL',
+          'value': 0
+        }, {
+          'id': 'US-AK',
+          'value': 0
+        }, {
+          'id': 'US-AZ',
+          'value': 0
+        }, {
+          'id': 'US-AR',
+          'value': 0
+        }, {
+          'id': 'US-CA',
+          'value': 0
+        }, {
+          'id': 'US-CO',
+          'value': 0
+        }, {
+          'id': 'US-CT',
+          'value': 0
+        }, {
+          'id': 'US-DE',
+          'value': 0
+        }, {
+          'id': 'US-FL',
+          'value': 0
+        }, {
+          'id': 'US-GA',
+          'value': 0
+        }, {
+          'id': 'US-HI',
+          'value': 0
+        }, {
+          'id': 'US-ID',
+          'value': 0
+        }, {
+          'id': 'US-IL',
+          'value': 0
+        }, {
+          'id': 'US-IN',
+          'value': 0
+        }, {
+          'id': 'US-IA',
+          'value': 0
+        }, {
+          'id': 'US-KS',
+          'value': 0
+        }, {
+          'id': 'US-KY',
+          'value': 0
+        }, {
+          'id': 'US-LA',
+          'value': 0
+        }, {
+          'id': 'US-ME',
+          'value': 0
+        }, {
+          'id': 'US-MD',
+          'value': 0
+        }, {
+          'id': 'US-MA',
+          'value': 0
+        }, {
+          'id': 'US-MI',
+          'value': 0
+        }, {
+          'id': 'US-MN',
+          'value': 0
+        }, {
+          'id': 'US-MS',
+          'value': 0
+        }, {
+          'id': 'US-MO',
+          'value': 0
+        }, {
+          'id': 'US-MT',
+          'value': 0
+        }, {
+          'id': 'US-NE',
+          'value': 0
+        }, {
+          'id': 'US-NV',
+          'value': 0
+        }, {
+          'id': 'US-NH',
+          'value': 0
+        }, {
+          'id': 'US-NJ',
+          'value': 0
+        }, {
+          'id': 'US-NM',
+          'value': 0
+        }, {
+          'id': 'US-NY',
+          'value': 0
+        }, {
+          'id': 'US-NC',
+          'value': 0
+        }, {
+          'id': 'US-ND',
+          'value': 0
+        }, {
+          'id': 'US-OH',
+          'value': 0
+        }, {
+          'id': 'US-OK',
+          'value': 0
+        }, {
+          'id': 'US-OR',
+          'value': 0
+        }, {
+          'id': 'US-PA',
+          'value': 0
+        }, {
+          'id': 'US-RI',
+          'value': 0
+        }, {
+          'id': 'US-SC',
+          'value': 0
+        }, {
+          'id': 'US-SD',
+          'value': 0
+        }, {
+          'id': 'US-TN',
+          'value': 0
+        }, {
+          'id': 'US-TX',
+          'value': 0
+        }, {
+          'id': 'US-UT',
+          'value': 0
+        }, {
+          'id': 'US-VT',
+          'value': 0
+        }, {
+          'id': 'US-VA',
+          'value': 0
+        }, {
+          'id': 'US-WA',
+          'value': 0
+        }, {
+          'id': 'US-WV',
+          'value': 0
+        }, {
+          'id': 'US-WI',
+          'value': 0
+        }, {
+          'id': 'US-WY',
+          'value': 0
+        } ]
 
     }
   },
@@ -100,15 +241,51 @@ export default {
         })
       }
     },
+    ncSaraMax: function () {
+      let values = this.computedMapDataProvider.map(data => data.value)
+      let max = Math.max(...values)
+      return max
+    },
+    ncSaraMin: function () {
+      let values = this.computedMapDataProvider.map(data => data.value)
+      let min = Math.min(...values)
+      return min
+    },
+    computedMapDataProvider () {
+      let ncSaraList = this.ncSaraList
+      let computedMapDataProvider = this.mapDataProvider.map(item => item)
+
+      if (this.NCSARAfilter === 'internal') {
+        ncSaraList.forEach(stateEntry => {
+          computedMapDataProvider.forEach(dataPoint => {
+            dataPoint['value'] += stateEntry[dataPoint['id'].replace('US-', '')]
+          })
+        })
+        // run internal routine
+        return computedMapDataProvider
+      } else if (this.NCSARAfilter === 'external') {
+        ncSaraList.forEach(stateEntry => {
+          computedMapDataProvider.forEach(dataPoint => {
+            if (dataPoint['id'].replace('US-', '') === stateEntry['State']) {
+              dataPoint['value'] += stateEntry[this.$route.params.id]
+            }
+          })
+        })
+        return computedMapDataProvider
+      }
+    },
     filteredList: function () {
-      let filteredYearList = this.data.filter(record => {
-        return record['Year'] === this.yearFilter
-      })
-      let filteredLevelList = filteredYearList.filter(record => {
+      let filteredLevelList = this.data.filter(record => {
         return record['Level'] === parseInt(this.levelFilter)
       })
+
+      filteredLevelList.sort((a, b) => a['Year'] > b['Year'])
       return filteredLevelList
     }
+  },
+  mounted: function () {
+    this.makeMap()
+    this.createLineChart()
   },
   created: function () {
     this.data = this.$parent.stateData.filter(record => {
@@ -121,190 +298,126 @@ export default {
     this.makeMap()
   },
   updated: function () {
-    this.logData()
     this.makeMap()
+    this.createLineChart()
   },
   methods: {
-    logData: function () {
-      console.log(this.data)
-      console.log(this.schoolData)
-    },
     makeMap: function () {
       console.log('makeMap called')
       window.AmCharts.makeChart('map', {
         'type': 'map',
         'theme': 'light',
-        'colorSteps': 10,
-
+        'colorSteps': 5,
         'dataProvider': {
           'map': 'usaLow',
-          'areas': [ {
-            'id': 'US-AL',
-            'value': 4447100
-          }, {
-            'id': 'US-AK',
-            'value': 626932
-          }, {
-            'id': 'US-AZ',
-            'value': 5130632
-          }, {
-            'id': 'US-AR',
-            'value': 2673400
-          }, {
-            'id': 'US-CA',
-            'value': 33871648
-          }, {
-            'id': 'US-CO',
-            'value': 4301261
-          }, {
-            'id': 'US-CT',
-            'value': 3405565
-          }, {
-            'id': 'US-DE',
-            'value': 783600
-          }, {
-            'id': 'US-FL',
-            'value': 15982378
-          }, {
-            'id': 'US-GA',
-            'value': 8186453
-          }, {
-            'id': 'US-HI',
-            'value': 1211537
-          }, {
-            'id': 'US-ID',
-            'value': 1293953
-          }, {
-            'id': 'US-IL',
-            'value': 12419293
-          }, {
-            'id': 'US-IN',
-            'value': 6080485
-          }, {
-            'id': 'US-IA',
-            'value': 2926324
-          }, {
-            'id': 'US-KS',
-            'value': 2688418
-          }, {
-            'id': 'US-KY',
-            'value': 4041769
-          }, {
-            'id': 'US-LA',
-            'value': 4468976
-          }, {
-            'id': 'US-ME',
-            'value': 1274923
-          }, {
-            'id': 'US-MD',
-            'value': 5296486
-          }, {
-            'id': 'US-MA',
-            'value': 6349097
-          }, {
-            'id': 'US-MI',
-            'value': 9938444
-          }, {
-            'id': 'US-MN',
-            'value': 4919479
-          }, {
-            'id': 'US-MS',
-            'value': 2844658
-          }, {
-            'id': 'US-MO',
-            'value': 5595211
-          }, {
-            'id': 'US-MT',
-            'value': 902195
-          }, {
-            'id': 'US-NE',
-            'value': 1711263
-          }, {
-            'id': 'US-NV',
-            'value': 1998257
-          }, {
-            'id': 'US-NH',
-            'value': 1235786
-          }, {
-            'id': 'US-NJ',
-            'value': 8414350
-          }, {
-            'id': 'US-NM',
-            'value': 1819046
-          }, {
-            'id': 'US-NY',
-            'value': 18976457
-          }, {
-            'id': 'US-NC',
-            'value': 8049313
-          }, {
-            'id': 'US-ND',
-            'value': 642200
-          }, {
-            'id': 'US-OH',
-            'value': 11353140
-          }, {
-            'id': 'US-OK',
-            'value': 3450654
-          }, {
-            'id': 'US-OR',
-            'value': 3421399
-          }, {
-            'id': 'US-PA',
-            'value': 12281054
-          }, {
-            'id': 'US-RI',
-            'value': 1048319
-          }, {
-            'id': 'US-SC',
-            'value': 4012012
-          }, {
-            'id': 'US-SD',
-            'value': 754844
-          }, {
-            'id': 'US-TN',
-            'value': 5689283
-          }, {
-            'id': 'US-TX',
-            'value': 20851820
-          }, {
-            'id': 'US-UT',
-            'value': 2233169
-          }, {
-            'id': 'US-VT',
-            'value': 608827
-          }, {
-            'id': 'US-VA',
-            'value': 7078515
-          }, {
-            'id': 'US-WA',
-            'value': 5894121
-          }, {
-            'id': 'US-WV',
-            'value': 1808344
-          }, {
-            'id': 'US-WI',
-            'value': 5363675
-          }, {
-            'id': 'US-WY',
-            'value': 493782
-          } ]
+          'areas': this.computedMapDataProvider
         },
-
         'areasSettings': {
           'autoZoom': true
         },
-
         'valueLegend': {
           'right': 10,
-          'minValue': 'little',
-          'maxValue': 'a lot!'
+          'minValue': this.ncSaraMin,
+          'maxValue': this.ncSaraMax
         },
 
         'export': {
           'enabled': true
         }
 
+      })
+    },
+    createLineChart: function () {
+      window.AmCharts.makeChart('linechart', {
+        'type': 'serial',
+        'theme': 'light',
+        'maginRight': 300,
+        'marginLeft': 100,
+        'autoMarginOffset': 20,
+        'dataDateFormat': 'YYYY',
+        'legend': {
+          'horizontalGap': 10,
+          'maxColumns': 1,
+          'position': 'right',
+          'useGraphSettings': true,
+          'markerSize': 10
+        },
+        'valueAxes': [{
+          'id': 'v1',
+          'axisAlpha': 0,
+          'position': 'left',
+          'ignoreAxisWidth': true,
+          'title': 'Enrollments'
+        }],
+        'balloon': {
+          'borderThickness': 1,
+          'shadowAlpha': 0
+        },
+        'graphs': [{
+          'id': 'g1',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'bullet': 'round',
+          'bulletBorderAlpha': 1,
+          'bulletColor': '#FFFFFF',
+          'title': 'Some Distance',
+          'bulletSize': 5,
+          'useLineColorForBulletBorder': true,
+          'valueField': 'Some_Distance'
+        },
+        {
+          'id': 'g5',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'type': 'column',
+          'color': '#000000',
+          'fillAlphas': 1,
+          'title': 'In State Students',
+          'valueField': 'InState_Students'
+        },
+        {
+          'id': 'g6',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'type': 'column',
+          'fillAlphas': 1,
+          'color': '#000000',
+          'title': 'Out of State Students',
+          'valueField': 'OutOfState_Students'
+        },
+        {
+          'id': 'g7',
+          'balloon': {
+            'drop': true,
+            'adjustBorderColor': false,
+            'color': '#ffffff'
+          },
+          'type': 'column',
+          'color': '#000000',
+          'fillAlphas': 1,
+          'title': 'International Students',
+          'valueField': 'International_Students'
+        }
+        ],
+        'categoryField': 'Year',
+        'categoryAxis': {
+          // 'parseDates': true,
+          'dashLength': 1,
+          'minorGridEnabled': true
+        },
+        'export': {
+          'enabled': true
+        },
+        'dataProvider': this.filteredList
       })
     }
   }
