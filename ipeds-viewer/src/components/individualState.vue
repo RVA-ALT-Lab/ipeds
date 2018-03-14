@@ -21,6 +21,7 @@
         <div id='linechart'></div>
       </div>
       <div class='col-lg-12'>
+        <hr>
         <h3>NC SARA Data</h3>
         <div class='form-group'>
           <label>Enrollment Filter</label>
@@ -33,6 +34,7 @@
 
       </div>
     <div class='col-lg-12'>
+      <hr>
       <h3>Individual Schools</h3>
       <table class='table table-striped'>
         <thead>
@@ -312,7 +314,7 @@ export default {
       window.AmCharts.makeChart('map', {
         'type': 'map',
         'theme': 'light',
-        'colorSteps': 5,
+        'colorSteps': 9,
         'dataProvider': {
           'map': 'usaLow',
           'areas': this.computedMapDataProvider
@@ -325,7 +327,12 @@ export default {
           'minValue': this.ncSaraMin,
           'maxValue': this.ncSaraMax
         },
-
+        'listeners': [{
+          'event': 'clickMapObject',
+          'method': function (event) {
+            console.log(event.mapObject.id)
+          }
+        }],
         'export': {
           'enabled': true
         }
