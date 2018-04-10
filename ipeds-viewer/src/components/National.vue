@@ -35,8 +35,12 @@ export default {
   },
   computed: {
     nationalList: function () {
-      return this.$parent.nationalData.filter(item => {
+      let filteredData = this.$parent.nationalData.filter(item => {
         return item.Level === parseInt(this.levelFilter)
+      })
+
+      return filteredData.sort((a, b) => {
+        return a.Year - b.Year
       })
     }
   },
@@ -44,6 +48,7 @@ export default {
     this.createChart()
   },
   updated: function () {
+    console.log(this.nationalList)
     this.createChart()
   },
   methods: {
@@ -105,6 +110,36 @@ export default {
         'export': {
           'enabled': true
         }
+      })
+    },
+    makeMap: function () {
+      console.log('makeMap called')
+      window.AmCharts.makeChart('map', {
+        'type': 'map',
+        'theme': 'light',
+        'colorSteps': 9,
+        'dataProvider': {
+          'map': 'usaLow',
+          'areas': ''
+        },
+        'areasSettings': {
+          'autoZoom': true
+        },
+        'valueLegend': {
+          'right': 10,
+          'minValue': '',
+          'maxValue': ''
+        },
+        'listeners': [{
+          'event': 'clickMapObject',
+          'method': function (event) {
+            console.log(event.mapObject.id)
+          }
+        }],
+        'export': {
+          'enabled': true
+        }
+
       })
     }
   }

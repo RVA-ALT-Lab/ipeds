@@ -1,8 +1,9 @@
 <template>
   <div class='hello'>
-    <h1>{{ msg }}</h1>
-    <h2>{{$route.params.id}}</h2>
-    {{individualSchoolData}}
+    <h2>{{individualSchoolData.INSTNM}}</h2>
+    <p>{{individualSchoolData.ADDR}}</p>
+    <p>{{individualSchoolData.CITY + ', ' + individualSchoolData.STABBR + ' '+ individualSchoolData.ZIP}}</p>
+    <p>{{individualSchoolData}}</p>
   </div>
 </template>
 <script>

@@ -34,6 +34,24 @@
       <div class="col-lg-12">
         <div id="chartdiv"></div>
       </div>
+      <table class="table">
+        <thead>
+          <th>State</th>
+          <th>Total Enrollments</th>
+          <th>Exclusive Distance</th>
+          <th>Some Distance</th>
+          <th>No Distance</th>
+          <th>Details Page</th>
+        </thead>
+        <tr v-for="state in filteredList" :key="state.State">
+          <td>{{state.State}}</td>
+          <td>{{state.Total_Distance.toLocaleString()}}</td>
+          <td>{{state.Exclusive_Distance.toLocaleString()}}</td>
+          <td>{{state.Some_Distance.toLocaleString()}}</td>
+          <td>{{state.None_Distance.toLocaleString()}}</td>
+          <td><router-link :to="{path:'/state/' + state.State}">View {{state.State}} Details</router-link></td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -75,6 +93,7 @@ export default {
       let annualFilteredStateData = this.selectedStateData.filter(record => {
         return record['Level'] === parseInt(this.levelFilter)
       })
+      annualFilteredStateData.sort((a, b) => a.Year - b.Year)
       return annualFilteredStateData
     }
   },

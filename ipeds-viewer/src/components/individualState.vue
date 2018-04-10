@@ -43,7 +43,7 @@
             <th></th>
           </tr>
         </thead>
-        <tr v-for='school in schoolData' :key='school.ID'>
+        <tr v-for='school in alphaOrderSchoolData' :key='school.ID'>
           <td>
             <router-link :to="{path:'/schools/' + school.ID}">
               {{school.Institution_Name}}
@@ -235,7 +235,9 @@ export default {
     ncSaraList: function () {
       if (this.NCSARAfilter === 'internal') {
         return this.$parent.NCSARAData.filter(record => {
-          return record['State'].toLowerCase() === this.$route.params.id.toLowerCase()
+          if (record['State'] !== undefined) {
+            return record['State'].toLowerCase() === this.$route.params.id.toLowerCase()
+          }
         })
       } else if (this.NCSARAfilter === 'external') {
         return this.$parent.NCSARAData.filter(record => {
@@ -288,6 +290,17 @@ export default {
 
       filteredLevelList.sort((a, b) => a['Year'] > b['Year'])
       return filteredLevelList
+    },
+    alphaOrderSchoolData: function () {
+      let data = this.schoolData
+      data.sort(function (a, b) {
+        let nameA = a.Institution_Name.toLowerCase().replace(/\W/g, '')
+        let nameB = b.Institution_Name.toLowerCase().replace(/\W/g, '')
+        if (nameA > nameB) return 1
+        if (nameA < nameB) return -1
+        return 0
+      })
+      return data
     }
   },
   mounted: function () {
@@ -302,6 +315,7 @@ export default {
     this.schoolData = this.$parent.transformedSchoolData.filter(record => {
       return record['State'] === this.$route.params.id
     })
+    console.log(this.schoolData)
     this.makeMap()
   },
   updated: function () {

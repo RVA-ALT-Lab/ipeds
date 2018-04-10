@@ -31,12 +31,20 @@ export default {
     schoolsList: function () {
       let arr = []
       for (let i = this.rowOffset * 50; i < (this.rowOffset * 50 + 50); i++) {
-        arr.push(this.$parent.transformedSchoolData[i])
+        arr.push(this.alphaOrderList[i])
       }
       return arr
     },
-    transformedList: function () {
-
+    alphaOrderList: function () {
+      let data = this.$parent.transformedSchoolData
+      data.sort(function (a, b) {
+        let nameA = a.Institution_Name.toLowerCase().replace(/\W/g, '')
+        let nameB = b.Institution_Name.toLowerCase().replace(/\W/g, '')
+        if (nameA > nameB) return 1
+        if (nameA < nameB) return -1
+        return 0
+      })
+      return data
     }
   },
   created: function () {
