@@ -2,10 +2,12 @@
   <div class='hello'>
     <h1>{{ msg }}</h1>
     <input type="text" v-model="searchText">
+    <button type="button" v-if="rowOffset > 0" v-on:click="previousPage">Previous Page</button>
     <button type="button" v-on:click="nextPage">Next Page</button>
     <table>
       <tr v-for="item in schoolsList" :key="item.ID">
         <td>{{item.Institution_Name}}</td>
+        <td><span v-for="prop in item" :key="item[prop]">{{prop}}</span></td>
         <td><router-link :to="{path:'/schools/' + item.ID}">{{item.ID}}</router-link></td>
       </tr>
     </table>
@@ -55,6 +57,9 @@ export default {
   methods: {
     nextPage: function () {
       this.rowOffset++
+    },
+    previousPage: function () {
+      this.rowOffset--
     }
   }
 }
